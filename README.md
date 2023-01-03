@@ -10,9 +10,9 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 
 ## Parts
 
-| **Part**  | **Link**                                                     | **Quantity** |
-| --------- | ------------------------------------------------------------ | ------------ |
-| M3 Washer | https://www.amazon.co.uk/3mm-Flat-Washer-Form-Stainless/dp/B08TDPSBBY | 4            |
-|           |                                                              |              |
-|           |                                                              |              |
+| **Part**                         | **Link**                                                     | **Quantity** |
+| -------------------------------- | ------------------------------------------------------------ | ------------ |
+| M3 Washer                        | https://www.amazon.co.uk/3mm-Flat-Washer-Form-Stainless/dp/B08TDPSBBY | 4            |
+| Raspberry Pi Standoff Set - 11mm | https://thepihut.com/products/raspberry-pi-standoff-set-11mm | 1            |
+|                                  |                                                              |              |
 
