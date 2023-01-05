@@ -23,3 +23,4 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 
 - Changing the screen brightness – https://forums.raspberrypi.com/viewtopic.php?t=214086
 - Install Pantheon on Ubuntu - https://askubuntu.com/questions/1432304/how-to-install-pantheon-files-elementary-os-file-manager-in-ubuntu-os-with-op
+- Ergogen for keyboard design – https://ergogen.cache.works
