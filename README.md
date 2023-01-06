@@ -32,3 +32,7 @@ Settings for the Makespace Jaws laser cutter:
 - Speed – 10
 - Power – 80
 - Corner Power – 70
+
+Export as DXF using Adobe Illustrator for AutoCAD 2018:
+
+![Screenshot of Adobe Illustrator DXF export dialog](images/export-settings.png)
