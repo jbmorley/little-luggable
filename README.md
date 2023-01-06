@@ -25,6 +25,13 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 - Install Pantheon on Ubuntu - https://askubuntu.com/questions/1432304/how-to-install-pantheon-files-elementary-os-file-manager-in-ubuntu-os-with-op
 - Ergogen for keyboard design – https://ergogen.cache.works
 
+  - Generating keyboard PCBs:
+    ```bash
+    asdf exec npm install
+    asdf exec node src/cli.js input.yaml -o output
+    ```
+
+
 ## Manufacture
 
 Settings for the Makespace Jaws laser cutter:
