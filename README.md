@@ -26,6 +26,10 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 
 ## Keyboard Design
 
+![Render of the 11.25u keyboard layout](images/keyboard.png)
+
+Reference:
+
 - [Making a Keyboard Macropad PCB (Kicad 6.0)](https://www.youtube.com/watch?v=7O8xGd7Pd88)
 
 ## Manufacture
