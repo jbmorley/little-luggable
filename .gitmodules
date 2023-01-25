@@ -1,0 +1,3 @@
+[submodule "keyboard/marbastlib"]
+	path = keyboard/marbastlib
+	url = git@github.com:ebastler/marbastlib.git
