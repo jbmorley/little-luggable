@@ -32,6 +32,7 @@ Reference:
 
 - [Making a Keyboard Macropad PCB (Kicad 6.0)](https://www.youtube.com/watch?v=7O8xGd7Pd88)
 - [Broaching Standoff](https://www.youtube.com/watch?v=TuJRveLrtYI)
+- [Solderable threaded inserts?](https://www.designdevelopmenttoday.com/new-products/fastening-assembly/fastening-assembly/product/21092287/keystone-electronics-corp-zero-height-threaded-inserts-for-pc-boards)
 
 ## Manufacture
 
