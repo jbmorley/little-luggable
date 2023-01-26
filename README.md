@@ -31,6 +31,7 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 Reference:
 
 - [Making a Keyboard Macropad PCB (Kicad 6.0)](https://www.youtube.com/watch?v=7O8xGd7Pd88)
+- [Broaching Standoff](https://www.youtube.com/watch?v=TuJRveLrtYI)
 
 ## Manufacture
 
