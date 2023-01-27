@@ -36,6 +36,13 @@ Reference:
 - [Broaching nuts and standoffs](https://www.inserco.eu/en/broaching-inserts-ipcbricbfhiscbr/)
 - [Solderable threaded inserts?](https://www.designdevelopmenttoday.com/new-products/fastening-assembly/fastening-assembly/product/21092287/keystone-electronics-corp-zero-height-threaded-inserts-for-pc-boards)
 
+Renaining:
+
+- [ ] Power switch
+- [ ] Check stabilizer orientation and clearance
+- [ ] Reset button
+- [ ] Screw mounts to secure the key switch mounting plate to the PCB (perhaps using broaching or surface mount standoffs?)
+
 ## Manufacture
 
 Settings for the Makespace Jaws laser cutter:
