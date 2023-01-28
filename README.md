@@ -15,6 +15,7 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 | **Part**                         | **Link**                                                     | **Quantity** |
 | -------------------------------- | ------------------------------------------------------------ | ------------ |
 | M3 Washer                        | https://www.amazon.co.uk/3mm-Flat-Washer-Form-Stainless/dp/B08TDPSBBY | 4            |
+| M3 Spacer (3mm)                  | https://www.amazon.co.uk/dp/B0BHJP3KJP                       | 6            |
 | Raspberry Pi Standoff Set - 11mm | https://thepihut.com/products/raspberry-pi-standoff-set-11mm | 1            |
 | Pelican/Peli 1150 Protector Case | https://peliproducts.co.uk/products/1150-protector-case      | 1            |
 | Pelican/Peli 1150 Panel Frame    | https://peliproducts.co.uk/products/1150-panel-frame         | 1            |
@@ -23,11 +24,11 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 
 ### Keyboard
 
-| **Part**      | **Link**                               | **Quantity** |
-| ------------- | -------------------------------------- | ------------ |
-| 5mm M3 Spacer | https://www.amazon.co.uk/dp/B0BHKJG3ST | 6            |
-| nice!nano     | https://doscher.com/work/quick-kit     | 1            |
-|               |                                        |              |
+| **Part**        | **Link**                               | **Quantity** |
+| --------------- | -------------------------------------- | ------------ |
+| M3 Spacer (5mm) | https://www.amazon.co.uk/dp/B0BHKJG3ST | 6            |
+| nice!nano       | https://doscher.com/work/quick-kit     | 1            |
+|                 |                                        |              |
 
 
 
