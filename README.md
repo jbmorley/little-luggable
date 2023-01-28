@@ -60,6 +60,8 @@ Renaining:
 - [ ] Screw mounts to secure the key switch mounting plate to the PCB (perhaps using broaching or surface mount standoffs?)
 - [ ] Add Pro Micro footprint to PCB
 - [ ] JST connector for the battery
+- [ ] Extend the fascia to wrap around the keys where possible and add additional mounting bolts for these
+- [ ] Center the fascia bolts vertically in the fascia plate
 
 ## Manufacture
 
