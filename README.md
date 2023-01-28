@@ -57,7 +57,7 @@ Renaining:
   - [ ] Order switch
   - [ ] Fascia hole
 
-- [ ] Screw mounts to secure the key switch mounting plate to the PCB (perhaps using broaching or surface mount standoffs?)
+- [ ] Screw mounts to secure the key switch mounting plate to the PCB; it should be sufficient to use 4 standard PCB mounting holes equally spaced, and between the keys, or perhaps 5 to add a little more stability
 - [ ] Add Pro Micro footprint to PCB
 - [ ] JST connector for the battery
 - [ ] Extend the fascia to wrap around the keys where possible and add additional mounting bolts for these
