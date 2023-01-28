@@ -53,7 +53,7 @@ Renaining:
 
 - [ ] Power switch
 - [ ] Check stabilizer orientation and clearance
-- [ ] Reset button
+- [ ] Reset button (maybe a longer one like https://sterenusa.com/steren-spst-2p-12v-no-tactile-micro-switch-long-stem/ would work well to mean we don't need to reach so deep into the board to press it)
   - [ ] Add to PCB
   - [ ] Order switch
   - [ ] Fascia hole
