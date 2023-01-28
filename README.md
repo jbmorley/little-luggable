@@ -26,7 +26,7 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 | **Part**      | **Link**                               | **Quantity** |
 | ------------- | -------------------------------------- | ------------ |
 | 5mm M3 Spacer | https://www.amazon.co.uk/dp/B0BHKJG3ST | 6            |
-|               |                                        |              |
+| nice!nano     | https://doscher.com/work/quick-kit     | 1            |
 |               |                                        |              |
 
 
@@ -53,7 +53,13 @@ Renaining:
 - [ ] Power switch
 - [ ] Check stabilizer orientation and clearance
 - [ ] Reset button
+  - [ ] Add to PCB
+  - [ ] Order switch
+  - [ ] Fascia hole
+
 - [ ] Screw mounts to secure the key switch mounting plate to the PCB (perhaps using broaching or surface mount standoffs?)
+- [ ] Add Pro Micro footprint to PCB
+- [ ] JST connector for the battery
 
 ## Manufacture
 
