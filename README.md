@@ -10,6 +10,8 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 
 ## Parts
 
+### Computer
+
 | **Part**                         | **Link**                                                     | **Quantity** |
 | -------------------------------- | ------------------------------------------------------------ | ------------ |
 | M3 Washer                        | https://www.amazon.co.uk/3mm-Flat-Washer-Form-Stainless/dp/B08TDPSBBY | 4            |
@@ -18,6 +20,16 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 | Pelican/Peli 1150 Panel Frame    | https://peliproducts.co.uk/products/1150-panel-frame         | 1            |
 | PiJuice 12000mAh Battery         | https://uk.pi-supply.com/products/pijuice-12000mah-battery   | 1            |
 | PiJuice HAT                      | https://uk.pi-supply.com/products/pijuice-standard           | 1            |
+
+### Keyboard
+
+| **Part**      | **Link**                               | **Quantity** |
+| ------------- | -------------------------------------- | ------------ |
+| 5mm M3 Spacer | https://www.amazon.co.uk/dp/B0BHKJG3ST | 6            |
+|               |                                        |              |
+|               |                                        |              |
+
+
 
 ## Notes
 
