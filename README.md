@@ -24,11 +24,11 @@ A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loos
 
 ### Keyboard
 
-| **Part**        | **Link**                               | **Quantity** |
-| --------------- | -------------------------------------- | ------------ |
-| M3 Spacer (5mm) | https://www.amazon.co.uk/dp/B0BHKJG3ST | 6            |
-| nice!nano       | https://doscher.com/work/quick-kit     | 1            |
-|                 |                                        |              |
+| **Part**                | **Link**                               | **Quantity** |
+| ----------------------- | -------------------------------------- | ------------ |
+| M3 Spacer (5mm)         | https://www.amazon.co.uk/dp/B0BHKJG3ST | 6            |
+| nice!nano               | https://doscher.com/work/quick-kit     | 1            |
+| 6mm tactile push button |                                        | 1            |
 
 
 
