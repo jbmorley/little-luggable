@@ -17,3 +17,4 @@
 - Update the keyboard fascia to wrap around the keys
 - Add power switch, reset switch, and USB-C port to the keyboard fascia
 - Add mounting holes to the keyboard mounting plate
+- Add collar for the keyboard latching switch
