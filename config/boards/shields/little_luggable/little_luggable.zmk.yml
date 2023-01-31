@@ -1,0 +1,9 @@
+file_format: "1"
+id: little_luggable
+name: Little Luggable
+type: shield
+url: https://github.com/foostan/crkbd/
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
