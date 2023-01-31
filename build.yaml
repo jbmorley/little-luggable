@@ -13,5 +13,5 @@
 #
 ---
 include:
-  - board: proton_c
+  - board: nice_nano_v2
     shield: kyria_left
