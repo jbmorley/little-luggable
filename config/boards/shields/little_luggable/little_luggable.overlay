@@ -3,6 +3,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
     };
 
     kscan0: kscan_0 {
@@ -21,6 +22,17 @@
             , <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
+    };
+
+    default_transform: matrix_transform {
+        compatible = "zmk,matrix-transform";
+        columns = <3>;
+        rows = <3>;
+        map = <
+            RC(0,0)         RC(0,2)
+                    RC(1,1)
+            RC(2,0)         RC(2,2)
+        >;
     };
 
 };
