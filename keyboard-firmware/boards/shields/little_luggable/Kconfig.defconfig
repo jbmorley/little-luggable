@@ -1,0 +1,12 @@
+if SHIELD_LITTLE_LUGGABLE
+
+config BT
+    default y
+
+config ZMK_BLE
+	default y
+
+config ZMK_KEYBOARD_NAME
+    default "Little Luggable"
+
+endif
