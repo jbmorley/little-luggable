@@ -1,9 +1,9 @@
 [submodule "keyboard/marbastlib"]
-	path = keyboard/pcb/marbastlib
+	path = keyboard/marbastlib
 	url = git@github.com:ebastler/marbastlib.git
 [submodule "keyboard/keebio-components"]
-	path = keyboard/pcb/keebio-components
+	path = keyboard/keebio-components
 	url = git@github.com:keebio/keebio-components.git
 [submodule "keyboard/Keebio-Parts.pretty"]
-	path = keyboard/pcb/Keebio-Parts.pretty
+	path = keyboard/Keebio-Parts.pretty
 	url = git@github.com:keebio/Keebio-Parts.pretty.git
