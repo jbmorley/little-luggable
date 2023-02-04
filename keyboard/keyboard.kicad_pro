@@ -366,7 +366,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "keyboard.dsn",
       "step": "keyboard.step",
       "vrml": ""
     },
