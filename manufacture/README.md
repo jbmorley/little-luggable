@@ -41,3 +41,7 @@ Export as DXF using Adobe Illustrator for AutoCAD 2018:
 - Add mounting holes to the keyboard mounting plate
 - Add collar for the keyboard latching switch
 - Add keyboard PCB silhouette for fit testing
+
+### v6
+
+- Update the keyboard PCB silhouette to reposition the nice!nano and include the holes for the broaching nuts, and through-holes for the battery and power switch
