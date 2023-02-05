@@ -172,7 +172,7 @@
     (property "Sheetname" "")
     (path "/9bccaeca-863e-4ef2-9442-24ea5a4de6f7")
     (attr through_hole)
-    (fp_text reference "D41" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D41" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b5c136db-f587-466b-a583-868d826bd340)
     )
@@ -180,7 +180,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 574a005d-c63c-45e8-b806-c502236fd7af)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 35d51b53-3aea-49c3-9e63-1a3f38a7f7fe)
     )
@@ -238,11 +238,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c8b5a8a2-bf96-4572-8984-8b93c9034a6a)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7217dd49-9bd5-4d72-ad77-983cbfbff274)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ff46d9e3-4ff8-4a58-a402-e76476ff2f60)
     )
@@ -296,7 +296,7 @@
     (property "Sheetname" "")
     (path "/550dc33d-cc46-482e-8518-ba45225511de")
     (attr through_hole)
-    (fp_text reference "D46" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D46" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp aa118dd0-214b-4e79-8fd4-e7476bdd5b81)
     )
@@ -304,7 +304,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7e9a6839-a480-4149-9a5d-972d2517fa04)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 081a6fe3-c701-4746-b344-64df5f8d08b8)
     )
@@ -413,11 +413,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4626aa8d-7df2-4c58-aa69-86b92ed92e2f)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 98085927-1c9b-42ed-a9fb-457035ad4484)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f6e90904-88e6-4b67-89f3-8a98389c4918)
     )
@@ -549,11 +549,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9fb68262-bf65-4dd2-ad9f-438f2f4e4e21)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6baa9bde-f46b-4715-8f5e-451f5d721009)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c0c82460-f96d-4100-81a2-cbbbf31955df)
     )
@@ -611,11 +611,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5dc24153-f761-4970-8a6b-7f91baa8fbd6)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ffb83c98-bb8d-48ee-b86d-c69bc9fe4f9c)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 73578e8a-206c-4415-98e4-8aba587ed703)
     )
@@ -669,7 +669,7 @@
     (property "Sheetname" "")
     (path "/9031754b-e844-4bec-bc52-8b5029688725")
     (attr through_hole)
-    (fp_text reference "D39" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D39" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6df2ed1e-bd0c-4eef-87c0-b4575cecfd5d)
     )
@@ -677,7 +677,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5cad6f22-e9b3-4f30-a648-cc52b7ac50a4)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e01bb923-83a4-4eb8-8633-b647af87d2ec)
     )
@@ -731,7 +731,7 @@
     (property "Sheetname" "")
     (path "/6abd398b-3c9b-4ef6-9fbf-b6f25b4c6176")
     (attr through_hole)
-    (fp_text reference "D52" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D52" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f9ca1520-3ea3-4c09-8630-d627f67032dc)
     )
@@ -739,7 +739,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4ee9a279-6336-49ff-af70-d123719e1e29)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp cc05b7b2-d0b9-48b7-b2ff-8892d924c16c)
     )
@@ -797,11 +797,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f307f65d-0a34-452b-8de2-1f150b578c2e)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2224edb0-20ab-4ebe-bf4c-d75cb60fffdc)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 52173960-f13e-4e28-bc41-22bdb0ce2b88)
     )
@@ -859,11 +859,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7c7b986b-a458-4094-9560-863979bbbae7)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1f5d6365-d7bc-4bd5-9fb0-544f962bfa0d)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3332982c-6c90-4626-b4fc-283a21fc0717)
     )
@@ -917,7 +917,7 @@
     (property "Sheetname" "")
     (path "/d0bce383-95ff-4a0f-9195-3de0fc83b260")
     (attr through_hole)
-    (fp_text reference "D45" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D45" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 17046015-49f5-4219-ae96-7c6750d0511e)
     )
@@ -925,7 +925,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8b85bd35-0906-420c-ad2c-8ccbf54f8c97)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 60c9b5e4-35cc-4ef4-b310-fb59c9ebc61a)
     )
@@ -983,11 +983,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp aad9f8c4-a7b5-40e6-a60d-58fb4f6ca9e6)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8268b1da-95ae-4d26-8036-101014af6e49)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 680176ac-8342-4141-88f6-9c1e28152cde)
     )
@@ -1041,7 +1041,7 @@
     (property "Sheetname" "")
     (path "/34afa220-8f8a-4b4f-9518-b2e70a80c8b1")
     (attr through_hole)
-    (fp_text reference "D56" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D56" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ff9af73c-7f2d-4b87-af26-b3d40f43ed5f)
     )
@@ -1049,7 +1049,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3b0dcb68-f224-484b-a6b1-202886eb2bea)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 330cb56d-0b9e-45a8-a2e9-bc88907d9aa1)
     )
@@ -1107,11 +1107,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 28f78b3f-7655-4d48-b75f-e369341200ef)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2879972e-3952-4291-ae13-381cdc36d900)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7cb89f4d-414c-4e94-8e7f-43c04635a126)
     )
@@ -1165,7 +1165,7 @@
     (property "Sheetname" "")
     (path "/ba222d6a-258b-4b3a-bb65-9d77ad11f78e")
     (attr through_hole)
-    (fp_text reference "D43" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D43" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0a708891-f208-47f1-bd23-9ca06be61b94)
     )
@@ -1173,7 +1173,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 432f5a28-a9c3-4d11-9f05-2932d47deafa)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0feb64f1-f547-47b9-a386-46d1fd8c5ad7)
     )
@@ -1227,7 +1227,7 @@
     (property "Sheetname" "")
     (path "/3a8a7db9-6bda-448f-bc00-3e972600feed")
     (attr through_hole)
-    (fp_text reference "D50" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D50" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c6cd26a7-53a6-4f0a-9be0-190d5094c5fc)
     )
@@ -1235,7 +1235,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7a826061-56f2-484f-b119-fb2eacc12a91)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 24f7f5a6-c219-44bb-a02d-c8d0e65cb985)
     )
@@ -1289,15 +1289,15 @@
     (property "Sheetname" "")
     (path "/d587f290-33f2-447b-9eee-993d6d3d9ec5")
     (attr through_hole)
-    (fp_text reference "D4" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D4" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ca5df844-8339-4f30-a10a-7e6ee781754a)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9e72ff76-e828-413f-80a9-d386a515bc00)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4caea42e-d60e-40b2-8cec-800a9144c033)
     )
@@ -1351,7 +1351,7 @@
     (property "Sheetname" "")
     (path "/387915ca-249e-4582-86e7-137ba10b3153")
     (attr through_hole)
-    (fp_text reference "D51" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D51" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 58bb5db9-4db5-4d44-80b7-c2779a391895)
     )
@@ -1359,7 +1359,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f4495f7d-22a3-418c-84bf-29c53fb2019e)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a7fb13b2-ce06-441d-a138-9e5be6a4bffa)
     )
@@ -1417,11 +1417,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 703c4e44-47d0-4dca-8e27-cadc00235983)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4d739a36-06d7-403b-96aa-559641150851)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 03f6c2ad-fc58-4cfe-a0d7-fc2269683046)
     )
@@ -1479,11 +1479,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b3b995c6-ec61-44f0-a257-35d6242e67fb)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 57862b90-c4ce-4098-a6b1-f37f6f61407e)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b582fecd-907a-4985-99d3-796aafba5eb7)
     )
@@ -1537,7 +1537,7 @@
     (property "Sheetname" "")
     (path "/c05c8947-9436-4eeb-ac0e-ab3a7a5dbce5")
     (attr through_hole)
-    (fp_text reference "D64" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D64" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 161e52a9-0506-4c25-a0f5-3550cd9d19d5)
     )
@@ -1545,7 +1545,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e7d2df02-0267-4798-8c3a-15f2f8811705)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e40941d7-bcd2-4c21-b4d6-fc05e6082cf0)
     )
@@ -1603,11 +1603,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2b0ce23e-9e33-4e7a-905f-d69b9ae07734)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2e6b0575-6a70-4a83-abc3-8f7d097cfc1a)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 96b0935f-7fae-48bf-b108-b4293fac5e97)
     )
@@ -1665,11 +1665,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a8f7d8c5-46e6-4eff-80a7-b7468e5cb6f5)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 03dde106-59f2-45e0-8cb2-d2e38bb4c3ec)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp cf9be4ab-2682-4eaa-a793-c9b08bc51fc0)
     )
@@ -1723,15 +1723,15 @@
     (property "Sheetname" "")
     (path "/2951c3b0-176c-4ed8-8f11-56d8651ce64c")
     (attr through_hole)
-    (fp_text reference "D3" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D3" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d152b878-f121-4ba0-b8eb-0aae6b23ab6c)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d4b3c39c-97ec-4865-9fb1-1d0c720833a2)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7f3ce0f4-2372-4b61-8b0d-71e420dc88eb)
     )
@@ -1785,15 +1785,15 @@
     (property "Sheetname" "")
     (path "/60dbfffb-47dd-46c5-adaa-2a55c90446e0")
     (attr through_hole)
-    (fp_text reference "D37" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D37" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5f5b466c-ac4f-4d7d-94b1-94ddb22e772f)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 099cfb22-7d9d-41a8-8a45-e5aee2307ae8)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 661ebb21-6f80-498a-a54a-89d84afd70a7)
     )
@@ -1851,11 +1851,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 90add872-6e59-401e-8916-f3082a543c0e)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f88299fd-8131-4fc1-b07f-9e446dd877c6)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 18cdbbf0-b33c-4832-a848-98a2eb7bbd7d)
     )
@@ -1913,11 +1913,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2cf5f5ae-5344-4439-a589-f43622b682f9)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1134fc73-dc91-48a1-86e6-976a00c93631)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 169c2180-92ee-401d-8078-ee5780b1ee0d)
     )
@@ -1975,11 +1975,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp fe98cfc4-8a7b-4054-a75a-5bfd543e0980)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5ec66605-f166-4145-8a0f-6a0003143ab9)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a4548853-8460-40b4-b85d-0cd893637529)
     )
@@ -2033,7 +2033,7 @@
     (property "Sheetname" "")
     (path "/fb63a5fa-6611-4b41-a932-649160a17b04")
     (attr through_hole)
-    (fp_text reference "D53" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D53" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c0d8862d-4fa7-41fe-b79b-233c31108584)
     )
@@ -2041,7 +2041,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp dd7b3433-86b4-4fe1-b302-9c64e79054d2)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 028e768a-ddff-4b40-90e6-cd6c250c3b4c)
     )
@@ -2095,7 +2095,7 @@
     (property "Sheetname" "")
     (path "/92fc21d1-ccc0-42f6-b5d9-6be71b666102")
     (attr through_hole)
-    (fp_text reference "D62" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D62" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a95d9e30-f561-4585-8103-0bc640a839f3)
     )
@@ -2103,7 +2103,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 37d66901-0aa9-486f-b114-4f246d5c5589)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7b340916-7dbf-4315-9582-54bcc8b5d9e9)
     )
@@ -2161,11 +2161,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 50ef4bec-4967-4c49-9ad8-5db12a63e6d3)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e9b94437-3b12-49d0-bd70-753bb3d2cdd8)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ebe9c9e0-9795-444a-a4ad-91fc9c9013b5)
     )
@@ -2219,7 +2219,7 @@
     (property "Sheetname" "")
     (path "/9803eec0-23b8-4d60-920c-b2a0fe998bfd")
     (attr through_hole)
-    (fp_text reference "D57" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D57" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 96d1689f-2948-476c-8355-a2adf2e3f604)
     )
@@ -2227,7 +2227,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6b47d5b4-f82a-4ffc-bed7-533bdcbb30c6)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5432652e-2eb2-46ff-b610-8786ccb36c7f)
     )
@@ -2281,7 +2281,7 @@
     (property "Sheetname" "")
     (path "/312dcd60-33bf-4807-9740-1777ab7885fa")
     (attr through_hole)
-    (fp_text reference "D59" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D59" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2c9362b8-b912-4c14-95ee-26a28faaf2e4)
     )
@@ -2289,7 +2289,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp fd2bf919-f969-43a1-baaf-410cda16ddd3)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6eda87ee-c936-45ce-a998-7f7d3e119e69)
     )
@@ -2343,15 +2343,15 @@
     (property "Sheetname" "")
     (path "/f0443d19-5519-444d-ba17-2c3dbfec87b7")
     (attr through_hole)
-    (fp_text reference "D38" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D38" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c1e72c86-7f54-424a-83f2-af488bc4c75b)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0bfc39e6-fe90-4d5f-974d-a4d17f07c936)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp cc1e166e-1536-48d9-a8aa-ff9bc61b38d3)
     )
@@ -2456,11 +2456,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a46d9cfc-30a4-4d61-bca1-4d7c304bbd06)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d8c8c870-6bc9-4a5b-9096-53e8c1f2998e)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1f5cfb2e-1f86-4f44-8640-396c8ef6b37a)
     )
@@ -2518,11 +2518,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e3001427-bf7e-4ddc-9649-eafb943bb549)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 07cbf6d6-1f5e-40c5-b443-00bd8d1fd678)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 99650cc7-7b22-4762-9a9d-437658bc5746)
     )
@@ -2580,11 +2580,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d945605d-ba21-42dc-9321-7fd23229d421)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9c2ea2c8-3030-4915-916f-ca9e57bfee9a)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9995a609-cc34-44c1-ac06-38865b178cf5)
     )
@@ -2638,7 +2638,7 @@
     (property "Sheetname" "")
     (path "/1ef2e093-de0a-4981-9691-9a6517e400af")
     (attr through_hole)
-    (fp_text reference "D55" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D55" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp df14681b-ff3b-4801-859e-ad5fefbca6be)
     )
@@ -2646,7 +2646,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9b4683c3-0b19-46c2-9466-55d5dee40f4c)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ba237472-7f24-453e-b7c4-25c148362766)
     )
@@ -2704,11 +2704,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ddf8eafd-ffc1-48d2-988e-2cefc12f460d)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d6646c13-2bce-4d7b-adda-91896de98f1f)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3951cb2e-0509-4bb1-bde5-283503e31b3f)
     )
@@ -2762,7 +2762,7 @@
     (property "Sheetname" "")
     (path "/28d67674-91bf-4c14-813c-19135b5fe705")
     (attr through_hole)
-    (fp_text reference "D61" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D61" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6ef630e1-cbe8-4329-9979-92dd7901a1ef)
     )
@@ -2770,7 +2770,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp dba23592-90f3-4c9b-a401-788e2aa7bcca)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7d875478-0c56-4ce2-ac7a-99cc55b47978)
     )
@@ -2824,7 +2824,7 @@
     (property "Sheetname" "")
     (path "/a4d821f2-58d7-4af8-82bc-c736ebaed02b")
     (attr through_hole)
-    (fp_text reference "D48" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D48" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9908dbed-4f47-4fc9-b54e-66c97d3067cd)
     )
@@ -2832,7 +2832,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 84051403-9236-4879-8d99-0faa113503ff)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d1226464-9c4a-4c2f-a791-dc3c9fa54a54)
     )
@@ -2890,11 +2890,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 08e3ff80-bf93-4fce-82bb-28bc601ddd67)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9fe66e6d-5bfa-4750-93f0-14e470eb1153)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c9fabcc7-0141-4d7c-8480-84eb264272dd)
     )
@@ -2952,11 +2952,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 183de59e-6d71-4dcf-ab18-4ed9712bf52a)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9662984f-0775-44ac-99a1-4a4af500f110)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3126f97d-e930-4373-ba70-efb9df4937e5)
     )
@@ -3010,7 +3010,7 @@
     (property "Sheetname" "")
     (path "/b25c9f65-dac5-4f89-85e2-5bae0a174f36")
     (attr through_hole)
-    (fp_text reference "D60" (at 3.81 -2.12 90) (layer "F.SilkS")
+    (fp_text reference "D60" (at 3.81 -2.12 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a63c37ab-8ec9-4036-8380-ae7aa14ca8fb)
     )
@@ -3018,7 +3018,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 081184fd-2e46-4c7b-8e6b-b8e45ad22ce1)
     )
-    (fp_text user "K" (at 0 -1.8 90) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b1a61241-6a44-43a2-b185-0c84713ae5e1)
     )
@@ -3072,7 +3072,7 @@
     (property "Sheetname" "")
     (path "/ef7c3980-1d83-4651-9c26-c79089583639")
     (attr through_hole)
-    (fp_text reference "D44" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D44" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f80df349-467e-4098-adbe-4c8675fadca0)
     )
@@ -3080,7 +3080,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 538869d8-c831-486e-8a63-c08fe6963d05)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 622af8da-7a6b-4e4b-8352-67d90ad9dae9)
     )
@@ -3210,7 +3210,7 @@
     (property "Sheetname" "")
     (path "/d965b07a-281b-40b6-9a52-9bb5428de838")
     (attr through_hole)
-    (fp_text reference "D54" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D54" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9795ad61-ec81-4fab-916e-43077624a857)
     )
@@ -3218,7 +3218,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp be5cfb43-cf72-4686-940e-447688ce6a7d)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 89b048fa-857b-4f03-8c62-16855fde50a4)
     )
@@ -3276,11 +3276,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d97ea3a3-9849-4cb6-a0be-0790a4b31096)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0c722fdc-7c11-4609-bcde-a4968e6756ac)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0e43391e-e648-4311-a1aa-81085a624bcc)
     )
@@ -3334,7 +3334,7 @@
     (property "Sheetname" "")
     (path "/eddf6ec9-d3f3-4d2d-b20d-63f1bdb9015d")
     (attr through_hole)
-    (fp_text reference "D47" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D47" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a0d2e2f2-f99d-4031-a986-461eb36a9a90)
     )
@@ -3342,7 +3342,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f543424b-e87f-42b9-b636-0cdf83dbb2b0)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b830bb9a-df75-47dd-83ba-0f52252988cb)
     )
@@ -3400,11 +3400,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d45dc74f-da0e-4d86-bd95-e2b172046223)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a0251c2d-fde5-44c1-92f4-c3e5b30d274a)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0dbe7149-1b9a-444b-9c64-e71b9dbc493d)
     )
@@ -3458,7 +3458,7 @@
     (property "Sheetname" "")
     (path "/0b37fd07-8368-4a3a-9403-376bc0ded269")
     (attr through_hole)
-    (fp_text reference "D49" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D49" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5fd358ae-331f-431a-a44a-2c411d2a1372)
     )
@@ -3466,7 +3466,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp da29f9f5-af13-46ae-b9f6-b7c6ac48f8a0)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 165ea51d-ffec-4dcb-a832-19bd0eb8a431)
     )
@@ -3524,11 +3524,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp aa3f623c-afd6-4491-b790-6fcba35c7e28)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp fa35f715-ed07-4172-9c77-8306486c833a)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3dc5b25e-6b6e-4d2e-b052-4a1790f71257)
     )
@@ -3582,7 +3582,7 @@
     (property "Sheetname" "")
     (path "/5c88dec8-4188-46b1-b1d8-c6a9ff12efab")
     (attr through_hole)
-    (fp_text reference "D42" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D42" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f9c5a2f6-3f25-4231-a1f2-b95cb2cececa)
     )
@@ -3590,7 +3590,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5879fa7b-d274-4cb2-83cc-966db2a39c87)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 88f73e2d-ab86-4a1e-bde9-e46cf45beabb)
     )
@@ -3644,7 +3644,7 @@
     (property "Sheetname" "")
     (path "/b1b0f01c-8d90-4edf-ab48-6b44ce3a6d47")
     (attr through_hole)
-    (fp_text reference "D58" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D58" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp aa19ac47-4177-48c1-937f-248923abe183)
     )
@@ -3652,7 +3652,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f6ca7da2-ceaf-4829-8fc4-961b958567d5)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c0fa2c8d-1266-4438-98e9-1af48e32ad0a)
     )
@@ -3710,11 +3710,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 32648fa8-f9b4-4cde-9c1c-dc347ba3141b)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a1572409-dfdb-4b5f-8dff-5411e226da26)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp beea6a8d-586d-4a2d-afc4-44c2009f6de2)
     )
@@ -3772,11 +3772,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6d71e8d8-f318-48ee-a596-a1bda867eeb5)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp fcb6d4c8-27ef-4818-89e3-84740d162248)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 01df31a1-09a0-46ee-801e-2de7cf6f5b1b)
     )
@@ -3892,11 +3892,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1eb655dc-286a-426f-a8a2-aec6e6f9e766)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9e27930b-3b06-40ad-a307-5921adc21574)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 186b7124-9163-4976-a272-2efa43849e34)
     )
@@ -4296,11 +4296,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5d73f37c-bd4b-42e9-b896-56e46e40297d)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7f09d038-0449-47a4-8941-f41c28885403)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c8f0b36f-0116-497c-aef4-b59be360a1d2)
     )
@@ -4358,11 +4358,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9615a1db-41e9-4840-8cab-73b10c20acfe)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp febeb27c-6028-4a9a-a480-8f1cd9daa5af)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c9679bd4-d8a4-495b-be84-e5366f8cc7eb)
     )
@@ -4416,7 +4416,7 @@
     (property "Sheetname" "")
     (path "/e91e054c-cd82-4732-9837-a9cf5f891fc7")
     (attr through_hole)
-    (fp_text reference "D40" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D40" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d1647a08-ff26-4316-a7c8-26f17b2411e8)
     )
@@ -4424,7 +4424,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp dd95ed1e-e769-4535-b1f4-3f915fe1ed72)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7b115a21-d032-42a3-a9e0-1c51c3106985)
     )
@@ -4482,11 +4482,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp eeb75103-f12d-4b04-afd6-231a8ed812a1)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 25c513ec-d17a-497e-a86d-5abb09ab3fad)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0afd068a-3882-4f21-bd9e-8d26af8def10)
     )
@@ -4540,7 +4540,7 @@
     (property "Sheetname" "")
     (path "/c0d99d30-3b39-40e0-bd9f-903209fef20c")
     (attr through_hole)
-    (fp_text reference "D63" (at 3.81 -2.12) (layer "F.SilkS")
+    (fp_text reference "D63" (at 3.81 -2.12) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8fd5f7cd-f977-460e-901d-2cbcc63f1686)
     )
@@ -4548,7 +4548,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8645b341-1815-417a-b9af-155c762e7aa6)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp bd373fe2-d146-4b2d-a654-40046462b062)
     )
@@ -4606,11 +4606,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2880b67f-5bac-4384-9cc4-c0ea15bbddf0)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6192ed6c-faab-46b3-82fb-00532e2d1db3)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8cf83fb3-30cc-445c-a6d1-d831fdd2ec42)
     )
@@ -4668,11 +4668,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 930e99a1-40a2-4e19-85f3-64f776b7bb61)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 62422187-ce03-46bd-be74-6b62dd329722)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4555fa14-9ad5-4bf7-930a-4a3ab26b52a4)
     )
@@ -4730,11 +4730,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 57222509-4f03-41d7-b750-0e0a64564ae6)
     )
-    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab")
+    (fp_text value "1N4148" (at 3.81 2.12) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ae85bc7d-f20c-40ab-a775-fe1391250f7d)
     )
-    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS")
+    (fp_text user "K" (at 0 -1.8) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 34844ec7-3cd1-406c-aae8-b533c112d394)
     )
