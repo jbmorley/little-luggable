@@ -45,3 +45,8 @@ Export as DXF using Adobe Illustrator for AutoCAD 2018:
 ### v6
 
 - Update the keyboard PCB silhouette to reposition the nice!nano and include the holes for the broaching nuts, and through-holes for the battery and power switch
+
+### v7
+
+- Update the keyboard fascia and mounting plate to [exactly] match the new PCB
+- Add the keyboard mounting brackets
