@@ -9,9 +9,12 @@
         default_layer {
 
             bindings = <
-                &kp A                    &kp BACKSPACE
-                              &kp SPACE
-                &bt BT_SEL 1             &bt BT_CLR
+                &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                  &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                  &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
+                &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A    &kp A
             >;
 
         };
