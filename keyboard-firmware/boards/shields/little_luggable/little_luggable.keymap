@@ -2,6 +2,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define LOWER 1
+#define RAISE 2
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -14,9 +17,22 @@
                 &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P
                   &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp RET
                     &kp LSHFT &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp DOT  &kp RSHFT
-                &kp LCTRL &kp A     &kp LALT  &kp LGUI  &kp SPACE     &kp SPACE     &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT
+                &kp LCTRL &mo LOWER &kp LALT  &kp LGUI  &kp SPACE     &kp SPACE     &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT
             >;
 
         };
+
+        lower_layer {
+
+            bindings = <
+                &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
+                  &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
+                &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
+                  &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
+                    &none    &none     &none    &none    &none    &none    &none    &none    &none    &none
+                &none    &none     &none    &none    &none    &none    &none    &none    &none    &none
+            >;
+
+        }
     };
 };
