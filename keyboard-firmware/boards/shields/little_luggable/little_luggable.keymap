@@ -39,7 +39,7 @@
 
             bindings = <
                 &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
-                  &none    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
+                  &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
                 &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
                   &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
                     &none    &none     &none    &none    &none    &none    &none    &none    &none    &none
