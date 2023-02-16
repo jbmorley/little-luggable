@@ -15,8 +15,8 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 | **Part**                                                     | **Quantity** |
 | ------------------------------------------------------------ | ------------ |
 | [M3 Washer](https://www.amazon.co.uk/3mm-Flat-Washer-Form-Stainless/dp/B08TDPSBBY) | 4            |
-| [M3 Spacer (3mm)](https://www.amazon.co.uk/dp/B0BHJP3KJP)    | 6            |
-| [Raspberry Pi Standoff Set (11mm)](https://thepihut.com/products/raspberry-pi-standoff-set-11mm) | 1            |
+| [M3 Spacer, 3mm](https://www.amazon.co.uk/dp/B0BHJP3KJP)     | 6            |
+| [Raspberry Pi Standoff Set, 11mm](https://thepihut.com/products/raspberry-pi-standoff-set-11mm) | 1            |
 | [Pelican 1150 Protector Case](https://peliproducts.co.uk/products/1150-protector-case) | 1            |
 | [Pelican 1150 Panel Frame](https://peliproducts.co.uk/products/1150-panel-frame) | 1            |
 | [PiJuice HAT](https://uk.pi-supply.com/products/pijuice-standard) | 1            |
@@ -26,7 +26,7 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 
 | **Part**                                                     | **Quantity** |
 | ------------------------------------------------------------ | ------------ |
-| [M3 Spacer (5mm)](https://www.amazon.co.uk/dp/B0BHKJG3ST)    | 6            |
+| [M3 Spacer, 5mm](https://www.amazon.co.uk/dp/B0BHKJG3ST)     | 6            |
 | [nice!nano](https://nicekeyboards.com/nice-nano/)            | 1            |
 | 6mm tactile push button                                      | 1            |
 | [Rama Works GRID Set A Keycaps, Kuro](https://ramaworks.store/collections/grid/products/grid-set-a?variant=16185106235435) | 46           |
