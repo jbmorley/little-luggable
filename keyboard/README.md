@@ -4,7 +4,9 @@
 
 The Little Luggable features a custom 64-key keyboard that I created with the very specific goal of deviating as little as possible from a standard keyboard layout.
 
-![Render of the 11.25u keyboard layout](/Users/jbmorley/Projects/little-luggable/images/keyboard.png)
+### Base Layer
+
+![Base layer](../images/keyboard.png)
 
 ## Useful References
 

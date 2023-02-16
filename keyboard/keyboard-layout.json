@@ -68,9 +68,15 @@
     "A",
     "S",
     "D",
+    {
+      "n": true
+    },
     "F",
     "G",
     "H",
+    {
+      "n": true
+    },
     "J",
     "K",
     "L",
@@ -106,14 +112,12 @@
   ],
   [
     "Ctrl",
-    "Mod",
+    "Lower",
+    "Raise",
     "Alt",
     "Super",
     {
-      "c": "#cccccc"
-    },
-    "",
-    {
+      "c": "#cccccc",
       "w": 2
     },
     "",
