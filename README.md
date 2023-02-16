@@ -19,8 +19,8 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 | [Raspberry Pi Standoff Set (11mm)](https://thepihut.com/products/raspberry-pi-standoff-set-11mm) | 1            |
 | [Pelican 1150 Protector Case](https://peliproducts.co.uk/products/1150-protector-case) | 1            |
 | [Pelican 1150 Panel Frame](https://peliproducts.co.uk/products/1150-panel-frame) | 1            |
-| [PiJuice 12000mAh Battery](https://uk.pi-supply.com/products/pijuice-12000mah-battery) | 1            |
 | [PiJuice HAT](https://uk.pi-supply.com/products/pijuice-standard) | 1            |
+| [PiJuice 12000mAh Battery](https://uk.pi-supply.com/products/pijuice-12000mah-battery) | 1            |
 
 ### Keyboard
 
