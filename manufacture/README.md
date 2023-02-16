@@ -28,6 +28,8 @@ Settings for the [Makespace](https://makespace.org) laser cutters[^laser]:
     - Power = 55
     - Corner Power = 55
 
+N.B. When cutting 1.5mm acrylic, the kerfing seems to be about ~0.1mm so dimensions need to be adjusted for high-tolerance parts like the keyboard mounting plate. For example, I found I needed to adjust the 14mm key-switch cutouts to be **13.8mm** to ensure the switches clip securely in place.
+
 
 ## Exports
 

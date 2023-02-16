@@ -38,6 +38,7 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 - [ ] Aluminium mounting plate
   - [ ] Check aluminium kerfing
   - [ ] Counter-sink the mounting holes
+  - [ ] Check the required hole size for M2.5 screws
 - [ ] Improve battery and power switch header positions
 - [ ] Different facia colours
 
