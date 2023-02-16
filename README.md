@@ -30,13 +30,6 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 | [nice!nano](https://nicekeyboards.com/nice-nano/)         | 1            |
 | 6mm tactile push button                                   | 1            |
 
-
-
-## Notes
-
-- Changing the screen brightness – https://forums.raspberrypi.com/viewtopic.php?t=214086
-- Install Pantheon on Ubuntu - https://askubuntu.com/questions/1432304/how-to-install-pantheon-files-elementary-os-file-manager-in-ubuntu-os-with-op
-
 ## Future
 
 - [ ] Aluminium mounting plate
@@ -45,3 +38,7 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 - [ ] Improve battery and power switch header positions
 - [ ] Different facia colours
 
+## Useful References
+
+- [Changing screen brightness](https://forums.raspberrypi.com/viewtopic.php?t=214086)
+- [Install Pantheon on Ubuntu](https://askubuntu.com/questions/1432304/how-to-install-pantheon-files-elementary-os-file-manager-in-ubuntu-os-with-op)
