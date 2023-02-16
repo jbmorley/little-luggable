@@ -2,17 +2,30 @@
 
 ## Settings
 
-Settings for the Makespace Jaws laser cutter:
+Settings for the [Makespace](https://makespace.org) laser cutters:
 
-- 3mm acrylic
-  - Speed = 10
-  - Power = 85
-  - Corner Power = 80
+- Jaws
+  - 3mm acrylic
+    - Speed = 10
+    - Power = 85
+    - Corner Power = 80
 
-- 1.5mm acrylic
-  - Speed = 10
-  - Power = 55
-  - Corner Power = 55
+  - 1.5mm acrylic
+    - Speed = 10
+    - Power = 55
+    - Corner Power = 55
+
+- Betsy
+  - 3mm acrylic
+    - Speed = 10
+    - Power = 90
+    - Corner Power = 85
+
+  - 1.5mm acrylic
+    - Speed = 10
+    - Power = 55
+    - Corner Power = 55
+
 
 ## Exports
 
