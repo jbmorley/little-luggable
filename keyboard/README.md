@@ -13,3 +13,4 @@ The Little Luggable features a custom 64-key keyboard that I created with the ve
 - [Broaching Standoff](https://www.youtube.com/watch?v=TuJRveLrtYI)
 - [Broaching nuts and standoffs](https://www.inserco.eu/en/broaching-inserts-ipcbricbfhiscbr/)
 - [Solderable threaded inserts?](https://www.designdevelopmenttoday.com/new-products/fastening-assembly/fastening-assembly/product/21092287/keystone-electronics-corp-zero-height-threaded-inserts-for-pc-boards)
+- [Keyswitch Kicad Library](https://github.com/perigoso/keyswitch-kicad-library)
