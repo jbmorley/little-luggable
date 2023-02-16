@@ -32,6 +32,7 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 | [Rama Works GRID Set A Keycaps, Kuro](https://ramaworks.store/collections/grid/products/grid-set-a?variant=16185106235435) | 46           |
 | [Rama Works GRID Set B Keycaps, Noct](https://ramaworks.store/collections/grid/products/grid-set-b?variant=31922049286222) | 18           |
 | [Kailh MX Hotswap Sockets](https://mechboards.co.uk/products/kailh-hotswap-sockets) | 64           |
+| [3.7V 90mAh Lithium Polymer Battery](https://www.ebay.co.uk/itm/195234783901) | 1            |
 
 ## Future
 
