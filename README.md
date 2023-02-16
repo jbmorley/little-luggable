@@ -49,18 +49,11 @@ Reference:
 - [Broaching nuts and standoffs](https://www.inserco.eu/en/broaching-inserts-ipcbricbfhiscbr/)
 - [Solderable threaded inserts?](https://www.designdevelopmenttoday.com/new-products/fastening-assembly/fastening-assembly/product/21092287/keystone-electronics-corp-zero-height-threaded-inserts-for-pc-boards)
 
-Renaining:
+## Future
 
-- [ ] Power switch
-- [ ] Check stabilizer orientation and clearance
-- [ ] Reset button (maybe a longer one like https://sterenusa.com/steren-spst-2p-12v-no-tactile-micro-switch-long-stem/ would work well to mean we don't need to reach so deep into the board to press it)
-  - [ ] Add to PCB
-  - [ ] Order switch
-  - [ ] Fascia hole
-
-- [ ] Screw mounts to secure the key switch mounting plate to the PCB; it should be sufficient to use 4 standard PCB mounting holes equally spaced, and between the keys, or perhaps 5 to add a little more stability
-- [ ] Add Pro Micro footprint to PCB
-- [ ] JST connector for the battery
-- [ ] Extend the fascia to wrap around the keys where possible and add additional mounting bolts for these
-- [ ] Center the fascia bolts vertically in the fascia plate
+- [ ] Aluminium mounting plate
+  - [ ] Check aluminium kerfing
+  - [ ] Counter-sink the mounting holes
+- [ ] Improve battery and power switch header positions
+- [ ] Different facia colours
 
