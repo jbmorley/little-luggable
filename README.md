@@ -29,8 +29,8 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 | [M3 Spacer (5mm)](https://www.amazon.co.uk/dp/B0BHKJG3ST)    | 6            |
 | [nice!nano](https://nicekeyboards.com/nice-nano/)            | 1            |
 | 6mm tactile push button                                      | 1            |
-| [Rama Works GRID Set A Keycaps, Kuro](https://ramaworks.store/collections/grid/products/grid-set-a?variant=16185106235435) | 1            |
-| [Rama Works GRID Set B Keycaps, Noct](https://ramaworks.store/collections/grid/products/grid-set-b?variant=31922049286222) | 1            |
+| [Rama Works GRID Set A Keycaps, Kuro](https://ramaworks.store/collections/grid/products/grid-set-a?variant=16185106235435) | 46           |
+| [Rama Works GRID Set B Keycaps, Noct](https://ramaworks.store/collections/grid/products/grid-set-b?variant=31922049286222) | 18           |
 | [Kailh MX Hotswap Sockets](https://mechboards.co.uk/products/kailh-hotswap-sockets) | 64           |
 
 ## Future
