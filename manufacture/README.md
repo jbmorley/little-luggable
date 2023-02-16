@@ -2,7 +2,9 @@
 
 ## Settings
 
-Settings for the [Makespace](https://makespace.org) laser cutters:
+Settings for the [Makespace](https://makespace.org) laser cutters[^laser]:
+
+[^laser]: These are for my own personal reference; you'll almost certainly want to do a few test cuts with your own laser cutter to dial in the correct settings.
 
 - Jaws
   - 3mm acrylic
