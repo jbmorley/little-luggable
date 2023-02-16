@@ -6,7 +6,7 @@ The Little Luggable features a custom 64-key keyboard that I created with the ve
 
 ### Base Layer
 
-![Base layer](../images/keyboard.png)
+<img alt="Layout base layer" src="../images/keyboard.png" width="627.5" />
 
 ## Useful References
 
