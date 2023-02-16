@@ -37,18 +37,6 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 - Changing the screen brightness – https://forums.raspberrypi.com/viewtopic.php?t=214086
 - Install Pantheon on Ubuntu - https://askubuntu.com/questions/1432304/how-to-install-pantheon-files-elementary-os-file-manager-in-ubuntu-os-with-op
 
-## Keyboard Design
-
-![Render of the 11.25u keyboard layout](images/keyboard.png)
-
-Reference:
-
-- [YouTube – Making a Keyboard Macropad PCB (Kicad 6.0)](https://www.youtube.com/watch?v=7O8xGd7Pd88)
-- [YouTube – Ben Vallack, Single Button Nice!Nano Keyboard](https://www.youtube.com/watch?v=vr8LkjsRqZs)
-- [Broaching Standoff](https://www.youtube.com/watch?v=TuJRveLrtYI)
-- [Broaching nuts and standoffs](https://www.inserco.eu/en/broaching-inserts-ipcbricbfhiscbr/)
-- [Solderable threaded inserts?](https://www.designdevelopmenttoday.com/new-products/fastening-assembly/fastening-assembly/product/21092287/keystone-electronics-corp-zero-height-threaded-inserts-for-pc-boards)
-
 ## Future
 
 - [ ] Aluminium mounting plate
