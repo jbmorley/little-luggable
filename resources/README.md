@@ -1,4 +1,6 @@
-# Acknowledgements
+# Resources
+
+## Acknowledgements
 
 The resources in this directory have been added for convenience and future reference and copyright remains with their respective owners. They are not covered by the broader license of this repository.
 
