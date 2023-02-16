@@ -8,6 +8,10 @@ The Little Luggable features a custom 64-key keyboard that I created with the ve
 
 <img alt="Layout base layer" src="../images/keyboard.png" width="627.5" />
 
+### Lower Layer (Bluetooth Controls)
+
+<img alt="Layout base layer" src="../images/keyboard-lower.png" width="627.5" />
+
 ## Useful References
 
 - [YouTube – Making a Keyboard Macropad PCB (Kicad 6.0), Noah Kiser](https://www.youtube.com/watch?v=7O8xGd7Pd88)
