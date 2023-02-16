@@ -35,7 +35,7 @@ N.B. When cutting 1.5mm acrylic, the kerfing seems to be about ~0.1mm so dimensi
 
 Export as DXF using Adobe Illustrator for AutoCAD 2018:
 
-![Screenshot of Adobe Illustrator DXF export dialog](../images/export-settings.png)
+<img alt="Screenshot of Adobe Illustrator DXF export dialog" src="../images/export-settings.png" width="615">
 
 ## Changes
 
