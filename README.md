@@ -6,7 +6,7 @@ Raspberry Pi Portable
 
 ## Overview
 
-A simple Cyberdeck built around the Raspberry Pi and the Pelican 1150 case. Loosely based on Jay Doscher's [Metal Kit](https://doscher.com/work/metal-kit).
+A cyberdeck built around the Raspberry Pi and the Pelican 1150 case with a completely custom keyboard designed to perfectly fit the lid of the Pelican 1150. Loosely based on Jay Doscher's [Metal Kit](https://doscher.com/work/metal-kit).
 
 ## Parts
 
