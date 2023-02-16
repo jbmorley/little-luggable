@@ -4,6 +4,8 @@
 
 The Little Luggable features a custom 64-key keyboard that I created with the very specific goal of deviating as little as possible from a standard keyboard layout.
 
+The basic design was created using [Keyboard Layout Editor](http://www.keyboard-layout-editor.com) and the JSON can be found in `keyboard/layouts`.
+
 ### Base Layer
 
 <img alt="Layout base layer" src="../images/keyboard.png" width="627.5" />
