@@ -47,10 +47,10 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 - Fascia, 3mm Acrylic, Laser Cut
 
-  ![](images/fascia.png)
+  ![](images/screen-fascia.png)
 
 - Mounting Plate, 1mm Aluminium, Laser Cut
-  ![](images/mounting-plate.png)
+  ![](images/screen-mounting-plate.png)
 
 ### Keyboard
 
