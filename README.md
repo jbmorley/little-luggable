@@ -54,7 +54,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 ### Keyboard
 
-![](images/keyboard-assembly.png)
+![](images/renders/keyboard-assembly.png)
 
 #### Off-the-shelf
 
@@ -89,18 +89,18 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
   - [Top](manufacture/v7/keyboard-fascia-top.dxf)
   - [Left](manufacture/v7/keyboard-fascia-left.dxf)
   - [Bottom](manufacture/v7/keyboard-fascia-bottom.dxf)
-  ![](images/keyboard-fascia.png)
+  ![](images/renders/keyboard-fascia.png)
   
 - [Mounting Plate, 1.5mm Aluminium, Laser Cut](manufacture/v7/keyboard-mounting-plate.dxf)
-  ![](images/keyboard-mounting-plate.png)
+  ![](images/renders/keyboard-mounting-plate.png)
 
   
 
 - PCB
-  ![](images/keyboard-pcb.png)
+  ![](images/renders/keyboard-pcb.png)
 
 - Mounting Brackets, 3D Printed
-  ![](images/keyboard-mounting-brackets.png)
+  ![](images/renders/keyboard-mounting-brackets.png)
 
 ## Future Ideas and Improvements
 
