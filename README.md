@@ -44,6 +44,8 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 ### Keyboard
 
+![](images/keyboard-assembly.png)
+
 #### Off-the-shelf
 
 | **Part**                                                     | **Quantity** |
@@ -65,17 +67,13 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 | Broaching Nuts                                               | 4            |
 | M2.5 Spacers                                                 | 4            |
 | Female Dupont Connector                                      | 4            |
-| 3D Printed Keyboard Mounts (4 pieces)                        | 1            |
 | PCB                                                          | 1            |
 | Cherry MX Switches                                           | 64           |
 | 90 Degree Headers, 2 wide                                    | 2            |
-| Switch Mounting Plate (Laser Cut)                            | 1            |
-| Fascia, Laser Cut (3 pieces)                                 | 1            |
-| Switch collar, Laser Cut                                     | 1            |
 
 #### Custom
 
-![](images/keyboard-assembly.png)
+- Power Switch Collar, 3mm Acrylic, Laser Cut
 
 - Fascia, 3mm Acrylic, Laser Cut ([Top DXF](manufacture/v7/keyboard-fascia-top.dxf), [Left DXF](manufacture/v7/keyboard-fascia-left.dxf), [Bottom DXF](manufacture/v7/keyboard-fascia-bottom.dxf))
   ![](images/keyboard-fascia.png)
@@ -87,6 +85,8 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 - PCB
   ![](images/keyboard-pcb.png)
+
+- Mounting Brackets, 3D Printed
 
 ## Future
 
