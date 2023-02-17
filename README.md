@@ -94,6 +94,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
   ![](images/keyboard-pcb.png)
 
 - Mounting Brackets, 3D Printed
+  ![](images/keyboard-mounting-brackets.png)
 
 ## Future Ideas and Improvements
 
