@@ -32,6 +32,9 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 #### Custom
 
 - Fascia, 3mm Acrylic, Laser Cut
+
+  ![](images/fascia.png)
+
 - Mounting Plate, 1mm Aluminium, Laser Cut
   ![](images/mounting-plate.png)
 
@@ -67,7 +70,7 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 ## Future
 
 - [ ] Aluminium mounting plate
-  - [ ] Check aluminium kerfing
+  - [ ] Check aluminium kerfing (measure the computer mounting plate)
   - [ ] Counter-sink the mounting holes
   - [ ] Check the required hole size for M2.5 screws
 - [ ] Improve battery and power switch header positions
