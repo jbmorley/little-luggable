@@ -24,7 +24,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 ### Screen and Computer
 
-![](images/screen-assembly.png)
+![](images/renders/screen-assembly.png)
 
 #### Off-the-shelf
 
@@ -47,10 +47,10 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 - Fascia, 3mm Acrylic, Laser Cut
 
-  ![](images/screen-fascia.png)
+  ![](images/renders/screen-fascia.png)
 
 - Mounting Plate, 1mm Aluminium, Laser Cut
-  ![](images/screen-mounting-plate.png)
+  ![](images/renders/screen-mounting-plate.png)
 
 ### Keyboard
 
