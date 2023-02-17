@@ -20,7 +20,9 @@ Right now I have a few spare PCBs and aluminium screen mounting plates as I had 
 
 Where possible, the Little Luggable uses off-the-shelf parts. I've separated these out and tried to provide links to places you can purchase standard parts. The links are currently pretty UK / US centric and I'd love pull requests for options for other markets.
 
-### Computer
+### Screen and Computer
+
+![](images/screen-assembly.png)
 
 #### Off-the-shelf
 
