@@ -75,6 +75,8 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 #### Custom
 
+![](images/keyboard-assembly.png)
+
 - Fascia, 3mm Acrylic, Laser Cut ([Top DXF](manufacture/v7/keyboard-fascia-top.dxf), [Left DXF](manufacture/v7/keyboard-fascia-left.dxf), [Bottom DXF](manufacture/v7/keyboard-fascia-bottom.dxf))
   ![](images/keyboard-fascia.png)
 
