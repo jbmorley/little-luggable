@@ -44,6 +44,8 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 ### Keyboard
 
+#### Off-the-shelf
+
 | **Part**                                                     | **Quantity** |
 | ------------------------------------------------------------ | ------------ |
 | [M3 Spacer, 5mm](https://www.amazon.co.uk/dp/B0BHKJG3ST)     | 7            |
@@ -71,6 +73,13 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 | Fascia, Laser Cut (3 pieces)                                 | 1            |
 | Switch collar, Laser Cut                                     | 1            |
 
+#### Custom
+
+- Fascia, 3mm Acrylic, Laser Cut
+  ![](images/keyboard-fascia.png)
+- Mounting Plate, 1.5mm Aluminium, Laser Cut
+- PCB
+
 ## Future
 
 - [ ] Aluminium mounting plate
@@ -80,6 +89,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 - [ ] Improve battery and power switch header positions
 - [ ] Different facia colours
 - [ ] Try 3d printing the switch collar
+- [ ] Check mounting plate thickness
 
 ## Useful References
 
