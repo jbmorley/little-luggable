@@ -12,6 +12,8 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 
 ### Computer
 
+#### Off-the-shelf
+
 | **Part**                                                     | **Quantity** |
 | ------------------------------------------------------------ | ------------ |
 | [Raspberry Pi 4 Model B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) | 1            |
@@ -23,12 +25,15 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 | [M3 Washer](https://www.amazon.co.uk/3mm-Flat-Washer-Form-Stainless/dp/B08TDPSBBY) | 4            |
 | [M3 Spacer, 3mm](https://www.amazon.co.uk/dp/B0BHJP3KJP)     | 6            |
 | [Raspberry Pi Standoff Set, 11mm](https://thepihut.com/products/raspberry-pi-standoff-set-11mm) | 1            |
-| Fascia, Laser Cut, 3mm Acrylic                               | 1            |
-| Mounting Plate, Laser Cut 1.5mm Aluminium                    | 1            |
 | USB-C Keystone                                               | 2            |
 | RJ45 Keystone                                                | 1            |
 | USB-A Keystone Cable                                         | 1            |
 
+#### Custom
+
+- Fascia, 3mm Acrylic, Laser Cut
+- Mounting Plate, 1mm Aluminium, Laser Cut
+  ![](images/mounting-plate.png)
 
 ### Keyboard
 
