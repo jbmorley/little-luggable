@@ -16,6 +16,8 @@ Little Luggable is licensed under Creative Commons Attribution 4.0 and I'd love 
 
 Right now I have a few spare PCBs and aluminium screen mounting plates as I had to order in bulk so reach out if you'd like one at cost + shipping.
 
+The original design was done in Fusion 360 which makes it a little hard to share, but I'm happy to figure out ways to do so if there's interest.
+
 ## Parts
 
 Where possible, the Little Luggable uses off-the-shelf parts. I've separated these out and tried to provide links to places you can purchase standard parts. The links are currently pretty UK / US centric and I'd love pull requests for options for other markets.
