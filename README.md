@@ -80,12 +80,16 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 #### Custom
 
-- Power Switch Collar, 3mm Acrylic, Laser Cut ([DXF](manufacture/v7/switch-collar.dxf))
+- [Power Switch Collar, 3mm Acrylic, Laser Cut](manufacture/v7/switch-collar.dxf)
 
-- Fascia, 3mm Acrylic, Laser Cut ([Top DXF](manufacture/v7/keyboard-fascia-top.dxf), [Left DXF](manufacture/v7/keyboard-fascia-left.dxf), [Bottom DXF](manufacture/v7/keyboard-fascia-bottom.dxf))
+- Fascia, 3mm Acrylic, Laser Cut
+  
+  - [Top](manufacture/v7/keyboard-fascia-top.dxf)
+  - [Left](manufacture/v7/keyboard-fascia-left.dxf)
+  - [Bottom](manufacture/v7/keyboard-fascia-bottom.dxf)
   ![](images/keyboard-fascia.png)
-
-- Mounting Plate, 1.5mm Aluminium, Laser Cut ([DXF](manufacture/v7/keyboard-mounting-plate.dxf))
+  
+- [Mounting Plate, 1.5mm Aluminium, Laser Cut](manufacture/v7/keyboard-mounting-plate.dxf)
   ![](images/keyboard-mounting-plate.png)
 
   
