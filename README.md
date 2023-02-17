@@ -77,8 +77,12 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 - Fascia, 3mm Acrylic, Laser Cut
   ![](images/keyboard-fascia.png)
+
 - Mounting Plate, 1.5mm Aluminium, Laser Cut
   ![](images/keyboard-mounting-plate.png)
+
+  [DXF](manufacture/v7/keyboard-mounting-plate.dxf)
+
 - PCB
 
 ## Future
