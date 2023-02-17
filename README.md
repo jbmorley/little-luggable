@@ -12,6 +12,8 @@ Check out the [project page](https://jbmorley.co.uk/projects/little-luggable) on
 
 ## Parts
 
+Where possible, the Little Luggable uses off-the-shelf parts. I've separated these out and tried to provide links to places you can purchase standard parts. The links are currently pretty UK / US centric and I'd love pull requests for options for other markets.
+
 ### Computer
 
 #### Off-the-shelf
