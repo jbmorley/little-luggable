@@ -95,7 +95,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 - Mounting Brackets, 3D Printed
 
-## Future
+## Future Ideas and Improvements
 
 - [ ] Aluminium mounting plate
   - [ ] Check aluminium kerfing (measure the computer mounting plate)
