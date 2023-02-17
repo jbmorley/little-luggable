@@ -39,9 +39,9 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 | [M3 Washer](https://www.amazon.co.uk/3mm-Flat-Washer-Form-Stainless/dp/B08TDPSBBY) | 4            |
 | [M3 Spacer, 3mm](https://www.amazon.co.uk/dp/B0BHJP3KJP)     | 6            |
 | [Raspberry Pi Standoff Set, 11mm](https://thepihut.com/products/raspberry-pi-standoff-set-11mm) | 1            |
-| USB-C Keystone                                               | 2            |
-| RJ45 Keystone                                                | 1            |
-| USB-A Keystone Cable                                         | 1            |
+| [USB-C Keystone Jack](https://www.amazon.co.uk/dp/B07Z947FRN) | 2            |
+| [RJ45 Keystone Jack](https://www.amazon.co.uk/dp/B07KMQPC3L) | 1            |
+| [USB-A Keystone Cable](https://www.amazon.co.uk/dp/B09B3YC29M) | 1            |
 
 #### Custom
 
