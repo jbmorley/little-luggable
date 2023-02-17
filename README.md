@@ -84,6 +84,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
   
 
 - PCB
+  ![](images/keyboard-pcb.png)
 
 ## Future
 
