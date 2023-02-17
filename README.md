@@ -36,6 +36,15 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 | [Rama Works GRID Set B Keycaps, Noct](https://ramaworks.store/collections/grid/products/grid-set-b?variant=31922049286222) | 18           |
 | [Kailh MX Hotswap Sockets](https://mechboards.co.uk/products/kailh-hotswap-sockets) | 64           |
 | [3.7V 90mAh Lithium Polymer Battery](https://www.ebay.co.uk/itm/195234783901) | 1            |
+| [M3 Knurled Insert Nuts, 0.5mm](https://www.amazon.co.uk/dp/B09MCX5HN5) | 5            |
+| [1N4148 Throughhole Diode](https://mechboards.co.uk/products/throughhole-diodes) | 64           |
+| [12mm Latching Push Button Switch](https://www.amazon.co.uk/dp/B08L484J7W) | 1            |
+| M3 Low-Profile Screws, ?mm                                   | 7            |
+| M3 Nut                                                       | 2            |
+| [90 Degree USB-C Adapter](https://www.amazon.co.uk/dp/B078MX7L84) | 1            |
+| M2.5 Screws                                                  | 4            |
+| Broaching Nuts                                               | 4            |
+| M2.5 Spacers                                                 | 4            |
 
 ## Future
 
