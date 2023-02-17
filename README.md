@@ -119,7 +119,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 - [Install Pantheon on Ubuntu](https://askubuntu.com/questions/1432304/how-to-install-pantheon-files-elementary-os-file-manager-in-ubuntu-os-with-op)
 - Generating renders for the documentation:
   1. Render using Fusion 360 with a white, solid color background, and no ground plane
-  2. Trim the resulting image using `mogrify`:
+  2. Trim the resulting image using [mogrify](https://imagemagick.org/script/mogrify.php):
      ```bash
      mogrify -trim -bordercolor white -border 60 render.png
      ```
