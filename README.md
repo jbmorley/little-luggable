@@ -10,6 +10,12 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 
 Check out the [project page](https://jbmorley.co.uk/projects/little-luggable) on my website for more.
 
+## Making Your Own
+
+Little Luggable is licensed under Creative Commons Attribution 4.0 and I'd love to see people take the design and make it their own. Pull requests are encouraged–I'm excited to see where we can take this. Please share photos if you do make one.
+
+Right now I have a few spare PCBs and aluminium screen mounting plates as I had to order in bulk so reach out if you'd like one at cost + shipping.
+
 ## Parts
 
 Where possible, the Little Luggable uses off-the-shelf parts. I've separated these out and tried to provide links to places you can purchase standard parts. The links are currently pretty UK / US centric and I'd love pull requests for options for other markets.
@@ -50,11 +56,11 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 
 | **Part**                                                     | **Quantity** |
 | ------------------------------------------------------------ | ------------ |
-| [M3 Spacer, 5mm](https://www.amazon.co.uk/dp/B0BHKJG3ST)     | 7            |
 | [nice!nano](https://nicekeyboards.com/nice-nano/)            | 1            |
-| 6mm tactile push button                                      | 1            |
 | [Rama Works GRID Set A Keycaps, Kuro](https://ramaworks.store/collections/grid/products/grid-set-a?variant=16185106235435) | 46           |
 | [Rama Works GRID Set B Keycaps, Noct](https://ramaworks.store/collections/grid/products/grid-set-b?variant=31922049286222) | 18           |
+| [M3 Spacer, 5mm](https://www.amazon.co.uk/dp/B0BHKJG3ST)     | 7            |
+| 6mm tactile push button                                      | 1            |
 | [Kailh MX Hotswap Sockets](https://mechboards.co.uk/products/kailh-hotswap-sockets) | 64           |
 | [3.7V 90mAh Lithium Polymer Battery](https://www.ebay.co.uk/itm/195234783901) | 1            |
 | [M3 Knurled Insert Nuts, 0.5mm](https://www.amazon.co.uk/dp/B09MCX5HN5) | 5            |
@@ -65,10 +71,9 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 | [90 Degree USB-C Adapter](https://www.amazon.co.uk/dp/B078MX7L84) | 1            |
 | M2.5 Screws                                                  | 4            |
 | Broaching Nuts                                               | 4            |
-| M2.5 Spacers                                                 | 4            |
+| M2.5 Spacers, 3mm                                            | 4            |
 | Female Dupont Connector                                      | 4            |
-| PCB                                                          | 1            |
-| Cherry MX Switches                                           | 64           |
+| [Cherry MX Red Switches](https://mechboards.co.uk/products/cherry-mx-red) | 64           |
 | 90 Degree Headers, 2 wide                                    | 2            |
 
 #### Custom
