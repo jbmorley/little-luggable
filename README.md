@@ -29,7 +29,7 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 
 | **Part**                                                     | **Quantity** |
 | ------------------------------------------------------------ | ------------ |
-| [M3 Spacer, 5mm](https://www.amazon.co.uk/dp/B0BHKJG3ST)     | 6            |
+| [M3 Spacer, 5mm](https://www.amazon.co.uk/dp/B0BHKJG3ST)     | 7            |
 | [nice!nano](https://nicekeyboards.com/nice-nano/)            | 1            |
 | 6mm tactile push button                                      | 1            |
 | [Rama Works GRID Set A Keycaps, Kuro](https://ramaworks.store/collections/grid/products/grid-set-a?variant=16185106235435) | 46           |
@@ -45,6 +45,14 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 | M2.5 Screws                                                  | 4            |
 | Broaching Nuts                                               | 4            |
 | M2.5 Spacers                                                 | 4            |
+| Female Dupont Connector                                      | 4            |
+| 3D Printed Keyboard Mounts (4 pieces)                        | 1            |
+| PCB                                                          | 1            |
+| Cherry MX Switches                                           | 64           |
+| 90 Degree Headers, 2 wide                                    | 2            |
+| Switch Mounting Plate (Laser Cut)                            | 1            |
+| Fascia, Laser Cut (3 pieces)                                 | 1            |
+| Switch collar, Laser Cut                                     | 1            |
 
 ## Future
 
@@ -54,6 +62,7 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
   - [ ] Check the required hole size for M2.5 screws
 - [ ] Improve battery and power switch header positions
 - [ ] Different facia colours
+- [ ] Try 3d printing the switch collar
 
 ## Useful References
 
