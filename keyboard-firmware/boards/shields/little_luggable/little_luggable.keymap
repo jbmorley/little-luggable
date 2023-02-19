@@ -42,7 +42,7 @@
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
                 &none    &none     &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
                   &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
-                    &none    &none     &none    &none    &none    &none    &none    &none    &kp KP_COMMA    &none
+                    &none    &none     &none    &none    &none    &none    &kp LT    &kp GT    &kp COMMA    &none
                 &none    &none     &none    &none    &none    &none    &none    &none    &none    &none
             >;
 
