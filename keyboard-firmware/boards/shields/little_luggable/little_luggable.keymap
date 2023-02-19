@@ -6,6 +6,18 @@
 #define RAISE 2
 
 / {
+
+{
+    behaviors {
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -38,7 +50,7 @@
         raise_layer {
 
             bindings = <
-                &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
+                &gresc    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
                 &none    &none     &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
                   &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
