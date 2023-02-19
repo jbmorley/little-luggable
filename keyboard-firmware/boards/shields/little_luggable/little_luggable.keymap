@@ -9,14 +9,6 @@
 
     behaviors {
 
-        gresc: grave_escape {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&kp GRAVE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         dotqmark: dot_question {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_QUESTION";
@@ -59,12 +51,12 @@
         raise_layer {
 
             bindings = <
-                &gresc    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
-                &none    &none     &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
+                &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
                   &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
                     &kp LSHFT  &none     &none    &none    &none    &none    &kp LT    &kp GT    &kp COMMA    &kp RSHFT
-                &none    &none     &none    &none    &none    &none    &none    &none    &none    &none
+                &kp LCTRL    &none     &none    &kp LALT    &kp LGUI    &none    &none    &none    &none    &none
             >;
 
         };
