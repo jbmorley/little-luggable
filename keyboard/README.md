@@ -8,11 +8,15 @@ The basic design was created using [Keyboard Layout Editor](http://www.keyboard-
 
 ### Base Layer
 
-<img alt="Layout base layer" src="../images/keyboard.png" width="627.5" />
+<img alt="Layout base layer" src="layouts/default.png" width="627.5" />
 
 ### Lower Layer (Bluetooth Controls)
 
-<img alt="Layout base layer" src="../images/keyboard-lower.png" width="627.5" />
+<img alt="Layout base layer" src="layouts/lower.png" width="627.5" />
+
+### Raise Layer (Punctuation and Special Characters)
+
+<img alt="Layout base layer" src="layouts/raise.png" width="627.5" />
 
 ## Useful References
 
