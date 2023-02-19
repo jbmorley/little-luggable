@@ -20,6 +20,7 @@
         dotqmark: dot_question {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_QUESTION";
+            #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp QUESTION>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
