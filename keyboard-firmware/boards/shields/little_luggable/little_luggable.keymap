@@ -7,7 +7,6 @@
 
 / {
 
-{
     behaviors {
         gresc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
