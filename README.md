@@ -102,13 +102,6 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 - Mounting Brackets, 3D Printed
   ![](images/renders/keyboard-mounting-brackets.png)
 
-## Future Ideas and Improvements
-
-- [ ] Aluminium mounting plate
-  - [ ] Check aluminium kerfing (measure the computer mounting plate)
-  - [ ] Counter-sink the mounting holes
-- [ ] Try different fascia colors (maybe original iMac colors)
-
 ## Useful References
 
 - [Changing screen brightness](https://forums.raspberrypi.com/viewtopic.php?t=214086)
