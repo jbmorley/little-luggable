@@ -28,7 +28,9 @@ Settings for the [Makespace](https://makespace.org) laser cutters[^laser]:
     - Power = 55
     - Corner Power = 55
 
-N.B. When cutting 1.5mm acrylic, the kerfing seems to be about ~0.1mm so dimensions need to be adjusted for high-tolerance parts like the keyboard mounting plate. For example, I found I needed to adjust the 14mm key-switch cutouts to be **13.8mm** to ensure the switches clip securely in place.
+N.B. When cutting 1.5mm acrylic, the kerfing[^kerf] seems to be about 0.2mm so dimensions need to be adjusted for high-tolerance parts like the keyboard mounting plate. For example, I found I needed to adjust the 14mm key-switch cutouts to be **13.8mm** to ensure the switches clip securely in place. I'm using the [DXF for Laser](https://apps.autodesk.com/FUSION/en/Detail/Index?id=7634902334100976871&appLang=en&os=Win64&autostart=true) plugin for Fusion 360 to automatically export kerf-adjusted parts.
+
+[^kerf]: I'm measuring kerfing as the full width of the cut, meaning a 0.2mm kerf will shrink parts on each side of a cut by 0.1mm. I believe this is the correct definition of 'kerf' but wanted to clarify just in case my understanding was incorrect.
 
 
 ## Exports
@@ -67,3 +69,13 @@ Export as DXF using Adobe Illustrator for AutoCAD 2018:
 
 - Update the keyboard fascia and mounting plate to [exactly] match the new PCB
 - Add the keyboard mounting brackets
+
+### v8
+
+- Increase the M3 and M2.5 hole sizes across the screen and keyboard components (to 3.2mm and 2.7mm respectively)
+- Increase the switch cutout diameter from 12mm to 12.5mm
+- Increase the switch collar inner diameter to 12.25 and export an STL file for 3D printing
+  - Add a screen switch collar (identical to the keyboard switch collar)
+- Add a collar for the 90 degree keyboard USB-C port
+- Update the bottom-left and bottom-right keyboard mounting brackets to actually centre the mounting holes on the case (and not the bottom row of keys)
+- Add 0.2mm kerf-adjusted exports of the keyboard fascias and mounting plate
