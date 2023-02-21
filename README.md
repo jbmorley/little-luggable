@@ -107,11 +107,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 - [ ] Aluminium mounting plate
   - [ ] Check aluminium kerfing (measure the computer mounting plate)
   - [ ] Counter-sink the mounting holes
-  - [ ] Check the required hole size for M2.5 screws
-- [ ] Improve battery and power switch header positions
-- [ ] Different facia colours
-- [ ] Try 3d printing the switch collar
-- [ ] Check mounting plate thickness
+- [ ] Try different fascia colors (maybe original iMac colors)
 
 ## Useful References
 
