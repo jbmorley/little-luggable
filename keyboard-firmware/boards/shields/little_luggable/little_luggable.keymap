@@ -17,6 +17,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        commaslash: comma_slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SLASH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
     };
 
     keymap {
@@ -55,7 +63,7 @@
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
                 &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
                   &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
-                    &kp LSHFT  &none     &none    &none    &none    &none    &kp LT    &kp GT    &kp COMMA    &kp RSHFT
+                    &kp LSHFT  &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &kp RSHFT
                 &kp LCTRL    &none     &none    &kp LALT    &kp LGUI    &none    &none    &none    &none    &none
             >;
 
