@@ -64,7 +64,7 @@
                 &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
                   &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
                     &kp LSHFT  &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &kp RSHFT
-                &kp LCTRL    &none     &none    &kp LALT    &kp LGUI    &none    &none    &none    &none    &none
+                &kp LCTRL    &none     &none    &kp LALT    &kp LGUI    &kp SPACE    &none    &none    &none    &none
             >;
 
         };
