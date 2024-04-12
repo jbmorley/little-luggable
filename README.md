@@ -102,6 +102,10 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
 - Mounting Brackets, 3D Printed
   ![](images/renders/keyboard-mounting-brackets.png)
 
+## Keyboard Layout
+
+![](keyboard/layouts/complete.png)
+
 ## Useful References
 
 - [Changing screen brightness](https://forums.raspberrypi.com/viewtopic.php?t=214086)
