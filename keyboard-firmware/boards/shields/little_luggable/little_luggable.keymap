@@ -34,6 +34,30 @@
 
     };
 
+    macros {
+
+        // Types the U+1F643 upside-down-face emoji by driving the host's hex
+        // Unicode entry: Ctrl+Shift+U, the codepoint (1f643), then Enter.
+        //
+        // This shortcut is understood both by IBus / GTK apps (inline hex
+        // entry) and by kitty, which binds Ctrl+Shift+U to its unicode_input
+        // kitten (also hex + Enter). The wait after Ctrl+Shift+U gives kitty's
+        // kitten time to open before the digits are typed; increase it if the
+        // first digits get dropped.
+        emoji_upside_down: emoji_upside_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <15>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_wait_time 300>
+                , <&macro_tap &kp LC(LS(U))>
+                , <&macro_wait_time 15>
+                , <&macro_tap &kp N1 &kp F &kp N6 &kp N4 &kp N3 &kp ENTER>;
+        };
+
+    };
+
     // Holding both the Lower and Raise thumb keys reveals the hidden adjust
     // layer, which is where the &about macro lives (Raise + Lower + A). This
     // keeps it out of the way during normal typing.
@@ -87,7 +111,7 @@
             bindings = <
                 &kp ESC    &kp C_BRI_DN    &kp C_BRI_UP    &kp C_PREV    &kp C_PP    &kp C_NEXT    &kp C_MUTE    &kp C_VOL_DN    &kp C_VOL_UP    &kp F11    &kp F12
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &kp DEL
-                &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
+                &none    &emoji_upside_down    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
                   &trans   &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
                     &trans     &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &trans
                 &trans   &trans    &none    &trans    &trans    &kp SPACE    &kp HOME    &kp PG_DN    &kp PG_UP    &kp END
