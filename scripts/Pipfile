@@ -1,0 +1,14 @@
+[[source]]
+
+name = "pypi"
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[packages]
+
+changes-semver = "*"
+inseven-build-tools = "*"
+
+[requires]
+
+python_version = "3.12"

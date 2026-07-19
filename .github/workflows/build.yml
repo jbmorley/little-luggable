@@ -1,9 +1,106 @@
-on: [push, pull_request, workflow_dispatch]
+name: build
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  build:
+
+  generate-version-number:
+    runs-on: ubuntu-latest
+
+    outputs:
+      version_number: ${{ steps.version.outputs.version_number }}
+      build_number: ${{ steps.version.outputs.build_number }}
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+
+    - name: Install the tool dependencies
+      uses: jdx/mise-action@v4
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Install dependencies
+      run: scripts/install-dependencies.sh
+
+    - name: Generate version and build numbers
+      id: version
+      run: |
+        source scripts/environment.sh
+        VERSION_NUMBER=`changes version`
+        BUILD_NUMBER=`build-tools generate-build-number`
+        echo "version_number=$VERSION_NUMBER" >> $GITHUB_OUTPUT
+        echo "build_number=$BUILD_NUMBER" >> $GITHUB_OUTPUT
+
+  firmware-build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
     with:
       build_matrix_path: keyboard-firmware/build.yaml
       config_path: keyboard-firmware
-      archive_name: little-luggable-firmware
+      archive_name: firmware
+
+  publish-release:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
+
+    needs:
+    - generate-version-number
+    - firmware-build
+
+    permissions:
+      contents: write
+
+    outputs:
+      released: ${{ steps.publish.outputs.released }}
+
+    env:
+      VERSION_NUMBER: ${{ needs.generate-version-number.outputs.version_number }}
+      BUILD_NUMBER: ${{ needs.generate-version-number.outputs.build_number }}
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+
+    - name: Install the tool dependencies
+      uses: jdx/mise-action@v4
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Install dependencies
+      run: scripts/install-dependencies.sh
+
+    - name: Download the firmware artifacts
+      uses: actions/download-artifact@v8
+      with:
+        name: firmware
+        path: artifacts
+
+    - name: Publish release
+      id: publish
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: scripts/release.sh
+
+    - name: Archive the release binaries
+      uses: actions/upload-artifact@v7
+      with:
+        name: release
+        path: build/*
+        if-no-files-found: error
