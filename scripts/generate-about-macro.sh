@@ -71,8 +71,7 @@ cat > "$OUTPUT_PATH" <<EOF
  *
  *     $TEXT
  *
- * The committed copy uses placeholder values; the build regenerates it with
- * the real version and build number.
+ * This file is generated at build time and is not checked in.
  */
 
 / {

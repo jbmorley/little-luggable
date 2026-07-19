@@ -3,8 +3,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 // The &about macro types the firmware identity (device name, version, and
-// build number). This file is regenerated at build time by
-// scripts/generate-about-macro.sh; the committed copy holds placeholder values.
+// build number). version.dtsi is not checked in; it is generated at build
+// time by scripts/generate-about-macro.sh (run it once before building
+// locally).
 #include "version.dtsi"
 
 #define LOWER 1
