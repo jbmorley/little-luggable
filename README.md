@@ -1,6 +1,8 @@
 # Little Luggable
 
-Raspberry Pi Portable
+[![build](https://github.com/jbmorley/little-luggable/actions/workflows/build.yml/badge.svg)](https://github.com/jbmorley/little-luggable/actions/workflows/build.yml)
+
+Raspberry Pi Cyberdeck
 
 ![Photo of the Lunchbox Luggable sitting on a desk](images/hero.jpg)
 
