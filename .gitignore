@@ -1,2 +1,8 @@
 keyboard/keyboard-backups/*.zip
 fp-info-cache
+
+# Build tooling output.
+/.local
+/artifacts
+/build
+/scripts/Pipfile.lock
