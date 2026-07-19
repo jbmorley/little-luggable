@@ -25,11 +25,7 @@ set -o pipefail
 set -x
 
 # Actually make the release.
-FLAGS=()
-if $CHANGES_INITIAL_DEVELOPMENT ; then
-    FLAGS+=("--prerelease")
-fi
-gh release create "$CHANGES_TAG" --title "$CHANGES_TITLE" --notes-file "$CHANGES_NOTES_FILE" "${FLAGS[@]}"
+gh release create "$CHANGES_TAG" --title "$CHANGES_TITLE" --notes-file "$CHANGES_NOTES_FILE"
 
 # Upload the attachments.
 for attachment in "$@"
