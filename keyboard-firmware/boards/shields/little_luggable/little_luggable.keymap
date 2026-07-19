@@ -40,7 +40,9 @@
     //
     // For this to work each layer key must be &trans (not &none) on the other
     // layer, so holding one and pressing the other still falls through to the
-    // base layer's &mo and activates both layers at once.
+    // base layer's &mo and activates both layers at once. The modifier
+    // positions are &trans on the secondary and tertiary layers for the same
+    // reason: so they inherit the base layer's modifiers everywhere.
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
@@ -73,9 +75,9 @@
                 &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none    &none    &none    &none    &none    &bt BT_CLR
                   &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
                 &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
-                  &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
-                    &none    &none     &none    &none    &none    &none    &none    &none    &none    &none
-                &none    &none     &trans    &none    &none    &none    &none    &none    &none    &none
+                  &trans   &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
+                    &trans   &none     &none    &none    &none    &none    &none    &none    &none    &trans
+                &trans   &none     &trans    &trans    &trans    &none    &none    &none    &none    &none
             >;
 
         };
@@ -86,9 +88,9 @@
                 &kp ESC    &none    &none    &none    &none    &none    &none    &none    &none    &kp F11    &kp F12
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
                 &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
-                  &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
-                    &kp LSHFT  &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &kp RSHFT
-                &kp LCTRL    &trans    &none    &kp LALT    &kp LGUI    &kp SPACE    &none    &none    &none    &none
+                  &trans   &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
+                    &trans     &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &trans
+                &trans   &trans    &none    &trans    &trans    &kp SPACE    &none    &none    &none    &none
             >;
 
         };
