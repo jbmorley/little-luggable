@@ -13,7 +13,7 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano@1.0.0//zmk # nice!nano v1
     shield: little_luggable
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk # nice!nano v2
     shield: little_luggable
