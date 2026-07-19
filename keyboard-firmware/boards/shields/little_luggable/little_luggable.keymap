@@ -37,6 +37,10 @@
     // Holding both the Lower and Raise thumb keys reveals the hidden adjust
     // layer, which is where the &about macro lives (Raise + Lower + A). This
     // keeps it out of the way during normal typing.
+    //
+    // For this to work each layer key must be &trans (not &none) on the other
+    // layer, so holding one and pressing the other still falls through to the
+    // base layer's &mo and activates both layers at once.
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
@@ -71,7 +75,7 @@
                 &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
                   &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
                     &none    &none     &none    &none    &none    &none    &none    &none    &none    &none
-                &none    &none     &none    &none    &none    &none    &none    &none    &none    &none
+                &none    &none     &trans    &none    &none    &none    &none    &none    &none    &none
             >;
 
         };
@@ -84,7 +88,7 @@
                 &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
                   &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
                     &kp LSHFT  &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &kp RSHFT
-                &kp LCTRL    &none     &none    &kp LALT    &kp LGUI    &kp SPACE    &none    &none    &none    &none
+                &kp LCTRL    &trans    &none    &kp LALT    &kp LGUI    &kp SPACE    &none    &none    &none    &none
             >;
 
         };
