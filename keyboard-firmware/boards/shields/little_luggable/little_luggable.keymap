@@ -10,6 +10,7 @@
 
 #define LOWER 1
 #define RAISE 2
+#define ADJUST 3
 
 / {
 
@@ -29,6 +30,19 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SLASH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+    };
+
+    // Holding both the Lower and Raise thumb keys reveals the hidden adjust
+    // layer, which is where the &about macro lives (Raise + Lower + A). This
+    // keeps it out of the way during normal typing.
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        adjust {
+            if-layers = <LOWER RAISE>;
+            then-layer = <ADJUST>;
         };
 
     };
@@ -68,9 +82,22 @@
                 &kp ESC    &none    &none    &none    &none    &none    &none    &none    &none    &kp F11    &kp F12
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
                 &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
-                  &none    &about    &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
+                  &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
                     &kp LSHFT  &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &kp RSHFT
                 &kp LCTRL    &none     &none    &kp LALT    &kp LGUI    &kp SPACE    &none    &none    &none    &none
+            >;
+
+        };
+
+        adjust_layer {
+
+            bindings = <
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                  &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                  &trans    &about    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
             >;
 
         };
