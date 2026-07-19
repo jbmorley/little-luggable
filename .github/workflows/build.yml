@@ -47,11 +47,72 @@ jobs:
         echo "build_number=$BUILD_NUMBER" >> $GITHUB_OUTPUT
 
   firmware-build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      build_matrix_path: keyboard-firmware/build.yaml
-      config_path: keyboard-firmware
-      archive_name: firmware
+    runs-on: ubuntu-latest
+
+    needs:
+    - generate-version-number
+
+    container:
+      image: zmkfirmware/zmk-build-arm:stable
+
+    env:
+      VERSION_NUMBER: ${{ needs.generate-version-number.outputs.version_number }}
+      BUILD_NUMBER: ${{ needs.generate-version-number.outputs.build_number }}
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v6
+
+    - name: Allow git to operate on the checkout
+      run: git config --global --add safe.directory '*'
+
+    - name: Cache west modules
+      uses: actions/cache@v4
+      with:
+        path: |
+          modules/
+          tools/
+          zephyr/
+          bootloader/
+          zmk/
+        key: ${{ runner.os }}-zmk-${{ hashFiles('keyboard-firmware/west.yml') }}
+        restore-keys: |
+          ${{ runner.os }}-zmk-
+
+    - name: Initialize the west workspace
+      run: |
+        west init -l keyboard-firmware
+        west update --fetch-opt=--filter=tree:0
+        west zephyr-export
+
+    - name: Generate the about macro
+      run: |
+        scripts/generate-about-macro.sh \
+          keyboard-firmware/boards/shields/little_luggable/version.dtsi \
+          "Little Luggable $VERSION_NUMBER $BUILD_NUMBER"
+        cat keyboard-firmware/boards/shields/little_luggable/version.dtsi
+
+    - name: Build the firmware
+      run: |
+        mkdir -p artifacts
+        build() {
+          local board="$1"
+          local name="$2"
+          west build -s zmk/app -d "build/$name" -b "$board" -- \
+            -DZMK_CONFIG="$PWD/keyboard-firmware" \
+            -DSHIELD=little_luggable
+          cp "build/$name/zephyr/zmk.uf2" "artifacts/$name.uf2"
+        }
+        build "nice_nano@1.0.0//zmk" "little-luggable-nice-nano-v1"
+        build "nice_nano@2.0.0//zmk" "little-luggable-nice-nano-v2"
+
+    - name: Archive the firmware
+      uses: actions/upload-artifact@v7
+      with:
+        name: firmware
+        path: artifacts/*
+        if-no-files-found: error
 
   publish-release:
     runs-on: ubuntu-latest
