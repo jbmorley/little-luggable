@@ -12,6 +12,30 @@
 #define RAISE 2
 #define ADJUST 3
 
+// Types a Unicode codepoint by driving the host's hex entry: Ctrl+Shift+U, the
+// codepoint's hex digits, then Enter. Understood by IBus / GTK apps (inline hex
+// entry) and by kitty (via its unicode_input kitten). Pass the hex digits as
+// &kp behaviors, e.g. UNICODE(&kp N1 &kp F &kp N9 &kp N1 &kp N4) for U+1F914.
+// The wait after Ctrl+Shift+U gives kitty's kitten time to open before the
+// digits are typed; increase it if the first digits get dropped.
+#define UNICODE(...) \
+    <&macro_wait_time 300>, \
+    <&macro_tap &kp LC(LS(U))>, \
+    <&macro_wait_time 15>, \
+    <&macro_tap __VA_ARGS__ &kp ENTER>
+
+// As UNICODE(), but for emoji made of two codepoints (e.g. a base character
+// plus the U+FE0F emoji variation selector), entered as two sequences.
+#define UNICODE2(cp1, cp2) \
+    <&macro_wait_time 300>, \
+    <&macro_tap &kp LC(LS(U))>, \
+    <&macro_wait_time 15>, \
+    <&macro_tap cp1 &kp ENTER>, \
+    <&macro_wait_time 300>, \
+    <&macro_tap &kp LC(LS(U))>, \
+    <&macro_wait_time 15>, \
+    <&macro_tap cp2 &kp ENTER>
+
 / {
 
     behaviors {
@@ -34,26 +58,104 @@
 
     };
 
+    // Each macro types an emoji via the host's Unicode hex entry using the
+    // UNICODE() / UNICODE2() helpers above. Bound on the lower layer.
     macros {
 
-        // Types the U+1F643 upside-down-face emoji by driving the host's hex
-        // Unicode entry: Ctrl+Shift+U, the codepoint (1f643), then Enter.
-        //
-        // This shortcut is understood both by IBus / GTK apps (inline hex
-        // entry) and by kitty, which binds Ctrl+Shift+U to its unicode_input
-        // kitten (also hex + Enter). The wait after Ctrl+Shift+U gives kitty's
-        // kitten time to open before the digits are typed; increase it if the
-        // first digits get dropped.
+        emoji_thinking: emoji_thinking {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N9 &kp N1 &kp N4);        // 🤔 U+1F914
+        };
+
+        emoji_monocle: emoji_monocle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N9 &kp D &kp N0);         // 🧐 U+1F9D0
+        };
+
+        emoji_grimace: emoji_grimace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N6 &kp N2 &kp C);         // 😬 U+1F62C
+        };
+
+        emoji_tear: emoji_tear {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N9 &kp N7 &kp N2);        // 🥲 U+1F972
+        };
+
         emoji_upside_down: emoji_upside_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <15>;
-            tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 300>
-                , <&macro_tap &kp LC(LS(U))>
-                , <&macro_wait_time 15>
-                , <&macro_tap &kp N1 &kp F &kp N6 &kp N4 &kp N3 &kp ENTER>;
+            bindings = UNICODE(&kp N1 &kp F &kp N6 &kp N4 &kp N3);        // 🙃 U+1F643
+        };
+
+        emoji_melting: emoji_melting {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp A &kp E &kp N0);          // 🫠 U+1FAE0
+        };
+
+        emoji_crying: emoji_crying {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N6 &kp N2 &kp D);         // 😭 U+1F62D
+        };
+
+        emoji_hearts: emoji_hearts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N9 &kp N7 &kp N0);        // 🥰 U+1F970
+        };
+
+        emoji_kiss: emoji_kiss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N6 &kp N1 &kp N8);        // 😘 U+1F618
+        };
+
+        emoji_hugging: emoji_hugging {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N9 &kp N1 &kp N7);        // 🤗 U+1F917
+        };
+
+        emoji_crossed: emoji_crossed {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N9 &kp N1 &kp E);         // 🤞 U+1F91E
+        };
+
+        emoji_point_up: emoji_point_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N4 &kp N4 &kp N6);        // 👆 U+1F446
+        };
+
+        emoji_ok: emoji_ok {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N4 &kp N4 &kp C);         // 👌 U+1F44C
+        };
+
+        emoji_heart: emoji_heart {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE2(&kp N2 &kp N7 &kp N6 &kp N4, &kp F &kp E &kp N0 &kp F);  // ❤️ U+2764 U+FE0F
+        };
+
+        emoji_party: emoji_party {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N3 &kp N8 &kp N9);        // 🎉 U+1F389
+        };
+
+        emoji_eyes: emoji_eyes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = UNICODE(&kp N1 &kp F &kp N4 &kp N4 &kp N0);        // 👀 U+1F440
         };
 
     };
@@ -98,9 +200,9 @@
             bindings = <
                 &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR    &none    &none    &none    &none    &none
                   &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
-                &none    &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
-                  &trans   &none     &none    &none    &none    &none    &none    &none    &none    &none    &none
-                    &trans   &none     &none    &none    &none    &none    &none    &none    &none    &trans
+                &none    &emoji_thinking    &emoji_monocle    &emoji_grimace    &emoji_tear    &emoji_upside_down    &emoji_melting    &emoji_crying    &emoji_hearts    &emoji_kiss    &emoji_hugging
+                  &trans   &emoji_crossed    &emoji_point_up    &emoji_ok    &none    &none    &none    &none    &none    &none    &none
+                    &trans   &emoji_heart    &emoji_party    &emoji_eyes    &none    &none    &none    &none    &none    &trans
                 &trans   &none     &trans    &trans    &trans    &none    &none    &none    &none    &none
             >;
 
@@ -111,7 +213,7 @@
             bindings = <
                 &kp ESC    &kp C_BRI_DN    &kp C_BRI_UP    &kp C_PREV    &kp C_PP    &kp C_NEXT    &kp C_MUTE    &kp C_VOL_DN    &kp C_VOL_UP    &kp F11    &kp F12
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &kp DEL
-                &none    &emoji_upside_down    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
+                &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
                   &trans   &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
                     &trans     &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &trans
                 &trans   &trans    &none    &trans    &trans    &kp SPACE    &kp HOME    &kp PG_DN    &kp PG_UP    &kp END
