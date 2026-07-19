@@ -2,6 +2,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+// The &about macro types the firmware identity (device name, version, and
+// build number). This file is regenerated at build time by
+// scripts/generate-about-macro.sh; the committed copy holds placeholder values.
+#include "version.dtsi"
+
 #define LOWER 1
 #define RAISE 2
 
@@ -62,7 +67,7 @@
                 &kp ESC    &none    &none    &none    &none    &none    &none    &none    &none    &kp F11    &kp F12
                   &kp GRAVE    &none     &none    &none    &none    &none    &none    &none    &kp MINUS    &kp EQUAL    &none
                 &none    &none    &none    &none    &none    &none    &none    &none    &kp LBKT    &kp RBKT    &kp BSLH
-                  &none    &none     &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
+                  &none    &about    &none    &none    &none    &none    &none    &none    &kp SEMI    &kp APOS    &none
                     &kp LSHFT  &none     &none    &none    &none    &none    &kp LT    &kp GT    &commaslash    &kp RSHFT
                 &kp LCTRL    &none     &none    &kp LALT    &kp LGUI    &kp SPACE    &none    &none    &none    &none
             >;
