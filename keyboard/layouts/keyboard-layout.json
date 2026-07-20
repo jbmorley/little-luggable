@@ -1,19 +1,17 @@
 [
   [
     {
-      "c": "#999999",
-      "a": 7
+      "c": "#999999"
     },
-    "Esc",
+    "\n0\n\n\n\n\n\n\n\nEsc",
     {
-      "c": "#cccccc",
-      "a": 4
+      "c": "#cccccc"
     },
-    "\n\n#1\n\n\n\n\n\n\nF1",
-    "\n\n#2\n\n\n\n\n\n\nF2",
-    "\n\n#3\n\n\n\n\n\n\nF3",
-    "\n\n#4\n\n\n\n\n\n\nF4",
-    "\n\n#5\n\n\n\n\n\n\nF5",
+    "\n1\n\n\n\n\n\n\n\nF1",
+    "\n2\n\n\n\n\n\n\n\nF2",
+    "\n3\n\n\n\n\n\n\n\nF3",
+    "\n4\n\n\n\n\n\n\n\nF4",
+    "\nClear\n\n\n\n\n\n\n\nF5",
     {
       "a": 7
     },
@@ -23,8 +21,8 @@
     {
       "a": 4
     },
-    "\n\nF11\n\n\n\n\n\n\nF9",
-    "\nClear\nF12\n\n\n\n\n\n\nF10"
+    "\n\n\nF11\n\n\n\n\n\nF9",
+    "\n\n\nF12\n\n\n\n\n\nF10"
   ],
   [
     {
@@ -55,21 +53,19 @@
   [
     "Tab",
     {
-      "c": "#cccccc"
-    },
-    "Q",
-    "W",
-    "E",
-    "R",
-    "T",
-    "Y",
-    "U",
-    {
+      "c": "#cccccc",
       "a": 4
     },
-    "\n\n{\n[\n\n\n\n\n\nI",
-    "\n\n}\n]\n\n\n\n\n\nO",
-    "\n\n|\n\\\n\n\n\n\n\nP"
+    "\n🤔\n\n\n\n\n\n\n\nQ",
+    "\n🧐\n\n\n\n\n\n\n\nW",
+    "\n😬\n\n\n\n\n\n\n\nE",
+    "\n🥲\n\n\n\n\n\n\n\nR",
+    "\n🙃\n\n\n\n\n\n\n\nT",
+    "\n🫠\n\n\n\n\n\n\n\nY",
+    "\n😭\n\n\n\n\n\n\n\nU",
+    "\n🥰\n{\n[\n\n\n\n\n\nI",
+    "\n😘\n}\n]\n\n\n\n\n\nO",
+    "\n🤗\n|\n\\\n\n\n\n\n\nP"
   ],
   [
     {
@@ -79,12 +75,14 @@
     },
     "Ctrl",
     {
-      "c": "#cccccc"
+      "c": "#cccccc",
+      "a": 4
     },
-    "A",
-    "S",
-    "D",
+    "\n🤞\n\n\n\n\n\n\n\nA",
+    "\n👆\n\n\n\n\n\n\n\nS",
+    "\n👌\n\n\n\n\n\n\n\nD",
     {
+      "a": 7,
       "n": true
     },
     "F",
@@ -111,11 +109,15 @@
     },
     "Shift",
     {
-      "c": "#cccccc"
+      "c": "#cccccc",
+      "a": 4
     },
-    "Z",
-    "X",
-    "C",
+    "\n❤️\n\n\n\n\n\n\n\nZ",
+    "\n🎉\n\n\n\n\n\n\n\nX",
+    "\n👀\n\n\n\n\n\n\n\nC",
+    {
+      "a": 7
+    },
     "V",
     "B",
     {
@@ -145,11 +147,12 @@
     },
     "",
     {
-      "c": "#999999"
+      "c": "#999999",
+      "a": 4
     },
-    "Left",
-    "Down",
-    "Up",
-    "Right"
+    "\n\n\nHome\n\n\n\n\n\nLeft",
+    "\n\n\nPgDn\n\n\n\n\n\nDown",
+    "\n\n\nPgUp\n\n\n\n\n\nUp",
+    "\n\n\nEnd\n\n\n\n\n\nRight"
   ]
 ]
