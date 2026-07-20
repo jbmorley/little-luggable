@@ -169,10 +169,6 @@ You can trigger a macro to type in the current firmware version and build number
 
 ## Useful References
 
-- [Changing screen brightness](https://forums.raspberrypi.com/viewtopic.php?t=214086)
-
-- [Install Pantheon on Ubuntu](https://askubuntu.com/questions/1432304/how-to-install-pantheon-files-elementary-os-file-manager-in-ubuntu-os-with-op)
-
 - Generating renders for the documentation:
   1. Render using Fusion 360 with a white, solid color background, and no ground plane
   2. Trim the resulting image using [mogrify](https://imagemagick.org/script/mogrify.php):
@@ -182,5 +178,5 @@ You can trigger a macro to type in the current firmware version and build number
 
 - [Keystone cutout details](https://www.phoenixcontact.com/en-pc/products/rj45-socket-insert-cuc-k-j1zni-s-r4idc8-1419021)
   ![](images/keystone-cutout.jpg)
-  
+
 - [Recommended Tapping Drill and Clearance Hole Sizes](https://international.optimas.com/technical-resources/tapping-sizes/)
