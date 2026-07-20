@@ -98,14 +98,19 @@ jobs:
         mkdir -p artifacts
         build() {
           local board="$1"
-          local name="$2"
+          local shield="$2"
+          local name="$3"
           west build -s zmk/app -d "build/$name" -b "$board" -- \
             -DZMK_CONFIG="$PWD/keyboard-firmware" \
-            -DSHIELD=little_keyboard
+            -DSHIELD="$shield"
           cp "build/$name/zephyr/zmk.uf2" "artifacts/$name.uf2"
         }
-        build "nice_nano@1.0.0//zmk" "little-keyboard-nice-nano-v1"
-        build "nice_nano@2.0.0//zmk" "little-keyboard-nice-nano-v2"
+        build "nice_nano@1.0.0//zmk" little_keyboard "little-keyboard-nice-nano-v1"
+        build "nice_nano@2.0.0//zmk" little_keyboard "little-keyboard-nice-nano-v2"
+        # settings_reset wipes the on-device settings partition (bonds and the
+        # stored BLE device name). Flash it once, then reflash the real firmware.
+        build "nice_nano@1.0.0//zmk" settings_reset "settings-reset-nice-nano-v1"
+        build "nice_nano@2.0.0//zmk" settings_reset "settings-reset-nice-nano-v2"
 
     - name: Archive the firmware
       uses: actions/upload-artifact@v7

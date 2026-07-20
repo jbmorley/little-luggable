@@ -69,10 +69,21 @@ cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v1.uf2" "$LITTLE_KEYBOARD_NIC
 LITTLE_KEYBOARD_NICE_NANO_V2_NAME="little-keyboard-nice-nano-v2-$VERSION_NUMBER-$BUILD_NUMBER.uf2"
 cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v2.uf2" "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME"
 
+# Settings reset firmware. This wipes the on-device settings partition (bonds
+# and the stored BLE device name); it is version-independent, so it keeps a
+# stable filename rather than being tagged with the version and build numbers.
+SETTINGS_RESET_NICE_NANO_V1_NAME="settings-reset-nice-nano-v1.uf2"
+cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v1.uf2" "$SETTINGS_RESET_NICE_NANO_V1_NAME"
+
+SETTINGS_RESET_NICE_NANO_V2_NAME="settings-reset-nice-nano-v2.uf2"
+cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v2.uf2" "$SETTINGS_RESET_NICE_NANO_V2_NAME"
+
 changes \
     release \
     --skip-if-empty \
     --push \
     --exec "$RELEASE_SCRIPT_PATH" \
     "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
-    "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V2_NAME"
+    "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
+    "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V1_NAME" \
+    "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V2_NAME"
