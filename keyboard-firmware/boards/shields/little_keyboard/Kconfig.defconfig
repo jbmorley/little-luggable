@@ -1,4 +1,4 @@
-if SHIELD_LITTLE_LUGGABLE
+if SHIELD_LITTLE_KEYBOARD
 
 config BT
     default y
@@ -7,6 +7,6 @@ config ZMK_BLE
 	default y
 
 config ZMK_KEYBOARD_NAME
-    default "Little Luggable"
+    default "Little Keyboard"
 
 endif
