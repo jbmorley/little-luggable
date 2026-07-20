@@ -1,6 +1,6 @@
 file_format: "1"
-id: little_luggable
-name: Little Luggable
+id: little_keyboard
+name: Little Keyboard
 type: shield
 url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
