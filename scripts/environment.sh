@@ -29,7 +29,6 @@ export LOCAL_TOOLS_PATH="$ROOT_DIRECTORY/.local"
 export PYTHONUSERBASE="$LOCAL_TOOLS_PATH/python"
 mkdir -p "$PYTHONUSERBASE"
 export PATH="$PYTHONUSERBASE/bin":$PATH
-export PYTHONPATH=$PYTHONUSERBASE
 
 # Keep pipenv virtualenvs local and predictable.
 export WORKON_HOME="$LOCAL_TOOLS_PATH"

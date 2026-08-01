@@ -44,5 +44,5 @@ mkdir -p "$LOCAL_TOOLS_PATH"
 source "$SCRIPTS_DIRECTORY/environment.sh"
 
 # Install the Python dependencies (uses PIPENV_PIPFILE from environment.sh).
-pip install --upgrade pip pipenv wheel certifi
+pip install --user --ignore-installed --upgrade pip pipenv wheel certifi
 pipenv install
