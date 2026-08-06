@@ -25,7 +25,7 @@ jobs:
     steps:
 
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         fetch-depth: 0
 
@@ -62,13 +62,13 @@ jobs:
     steps:
 
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Allow git to operate on the checkout
       run: git config --global --add safe.directory '*'
 
     - name: Cache west modules
-      uses: actions/cache@v4
+      uses: actions/cache@v6
       with:
         path: |
           modules/
@@ -140,7 +140,7 @@ jobs:
     steps:
 
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         fetch-depth: 0
 
