@@ -2,10 +2,8 @@ keyboard/keyboard-backups/*.zip
 fp-info-cache
 
 # Build tooling output.
-/.local
 /artifacts
 /build
-/scripts/Pipfile.lock
 
 # Generated at build time by scripts/generate-about-macro.sh.
 /keyboard-firmware/boards/shields/little_keyboard/version.dtsi
