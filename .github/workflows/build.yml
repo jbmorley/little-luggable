@@ -29,18 +29,21 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Install the tool dependencies
+    # Ensure we're using the latest version of mise in an attempt to catch upstream errors early.
+    - name: Get the latest mise version
+      id: mise
+      run: echo "version=$(curl -fsSL https://mise.jdx.dev/VERSION)" >> "$GITHUB_OUTPUT"
+
+    - name: Install mise
       uses: jdx/mise-action@v4
+      with:
+        version: ${{ steps.mise.outputs.version }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Install dependencies
-      run: scripts/install-dependencies.sh
 
     - name: Generate version and build numbers
       id: version
       run: |
-        source scripts/environment.sh
         VERSION_NUMBER=`changes version`
         BUILD_NUMBER=`build-tools generate-build-number`
         echo "version_number=$VERSION_NUMBER" >> $GITHUB_OUTPUT
@@ -144,13 +147,17 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Install the tool dependencies
+    # Ensure we're using the latest version of mise in an attempt to catch upstream errors early.
+    - name: Get the latest mise version
+      id: mise
+      run: echo "version=$(curl -fsSL https://mise.jdx.dev/VERSION)" >> "$GITHUB_OUTPUT"
+
+    - name: Install mise
       uses: jdx/mise-action@v4
+      with:
+        version: ${{ steps.mise.outputs.version }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Install dependencies
-      run: scripts/install-dependencies.sh
 
     - name: Download the firmware artifacts
       uses: actions/download-artifact@v8
