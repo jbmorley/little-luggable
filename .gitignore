@@ -2,7 +2,7 @@
 .env
 /_site
 /artifacts
-/build
+/keyboard/build
 /docs/_site
 /docs/.jekyll-cache
 /docs/releases
