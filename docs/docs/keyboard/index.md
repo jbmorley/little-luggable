@@ -1,5 +1,5 @@
 ---
-title: Little Keyboard
+title: Keyboard
 priority: 90
 ---
 
