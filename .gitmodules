@@ -7,3 +7,7 @@
 [submodule "keyboard/Keebio-Parts.pretty"]
 	path = keyboard/Keebio-Parts.pretty
 	url = https://github.com/keebio/Keebio-Parts.pretty.git
+[submodule "docs/_theme"]
+	path = docs/_theme
+	url = https://github.com/jbmorley/showcase-theme.git
+	branch = main
