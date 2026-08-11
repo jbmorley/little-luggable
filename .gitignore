@@ -1,9 +1,12 @@
-keyboard/keyboard-backups/*.zip
-fp-info-cache
-
-# Build tooling output.
+.DS_Store
+.env
+/_site
 /artifacts
 /build
-
-# Generated at build time by scripts/generate-about-macro.sh.
+/docs/_site
+/docs/.jekyll-cache
+/docs/releases
+/docs/vendor
 /keyboard-firmware/boards/shields/little_keyboard/version.dtsi
+fp-info-cache
+keyboard/keyboard-backups/*.zip

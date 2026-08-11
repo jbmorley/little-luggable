@@ -1,0 +1,46 @@
+theme: theme
+title: Little Luggable
+author: Jason Morley
+email: support@jbmorley.co.uk
+description: Raspberry Pi Cyberdeck
+image: images/hero.jpg
+baseurl: ""
+url: "https://little-luggable.jbmorley.co.uk"
+repository: https://github.com/jbmorley/little-luggable
+copyright: 2022-2026 <a href="https://jbmorley.co.uk/about">Jason Morley</a>
+
+navigation:
+  - title: Little Luggable
+    href: /
+  - title: Documentation
+    href: /docs
+  - title: Releases
+    href: /releases
+  - title: GitHub
+    href: https://github.com/jbmorley/little-luggable
+  - title: More
+    href: https://jbmorley.co.uk/projects/
+  - title: Donate ❤️
+    href: https://jbmorley.co.uk/donate/
+
+footer:
+  - title: License
+    href: /license
+
+destination: ../_site
+
+toc:
+  ordered_list: true
+
+gfm_admonitions:
+  inject_css: false
+
+defaults:
+  - values:
+      layout: "page"
+  - scope:
+      path: "docs"
+    values:
+      layout: "documentation"
+      toc: true
+      shows_title: true
