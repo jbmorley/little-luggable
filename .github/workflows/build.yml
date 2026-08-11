@@ -79,22 +79,22 @@ jobs:
           zephyr/
           bootloader/
           zmk/
-        key: ${{ runner.os }}-zmk-${{ hashFiles('keyboard-firmware/west.yml') }}
+        key: ${{ runner.os }}-zmk-${{ hashFiles('keyboard/firmware/west.yml') }}
         restore-keys: |
           ${{ runner.os }}-zmk-
 
     - name: Initialize the west workspace
       run: |
-        west init -l keyboard-firmware
+        west init -l keyboard/firmware
         west update --fetch-opt=--filter=tree:0
         west zephyr-export
 
     - name: Generate the about macro
       run: |
         scripts/generate-about-macro.sh \
-          keyboard-firmware/boards/shields/little_keyboard/version.dtsi \
+          keyboard/firmware/boards/shields/little_keyboard/version.dtsi \
           "Little Keyboard $VERSION_NUMBER $BUILD_NUMBER"
-        cat keyboard-firmware/boards/shields/little_keyboard/version.dtsi
+        cat keyboard/firmware/boards/shields/little_keyboard/version.dtsi
 
     - name: Build the firmware
       run: |
@@ -104,7 +104,7 @@ jobs:
           local shield="$2"
           local name="$3"
           west build -s zmk/app -d "build/$name" -b "$board" -- \
-            -DZMK_CONFIG="$PWD/keyboard-firmware" \
+            -DZMK_CONFIG="$PWD/keyboard/firmware" \
             -DSHIELD="$shield"
           cp "build/$name/zephyr/zmk.uf2" "artifacts/$name.uf2"
         }
