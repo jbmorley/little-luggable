@@ -8,7 +8,7 @@ Raspberry Pi Cyberdeck
 
 ## Overview
 
-The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry Pi 4 Model B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/) and the [Pelican 1150 Protector Case](https://www.peli.com/eu/en/product/cases/protector/1150) and is loosely based on Jay Doscher's [Metal Kit](https://doscher.com/work/metal-kit). It includes a fully-custom mechanical keyboard designed to perfectly fit the lid of the 1150.
+The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/) and the [Pelican 1150 Protector Case](https://www.peli.com/eu/en/product/cases/protector/1150). It includes a [fully-custom mechanical keyboard](/docs/keyboard) designed to perfectly fit the lid of the 1150.
 
 Check out the [project page](https://little-luggable.jbmorley.co.uk) for more.
 
