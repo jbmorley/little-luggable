@@ -28,11 +28,12 @@ set -u
 SCRIPTS_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 ROOT_DIRECTORY="$SCRIPTS_DIRECTORY/.."
-RELEASE_NOTES_TEMPLATE_PATH="$SCRIPTS_DIRECTORY/release-notes.md"
-RELEASE_NOTES_DIRECTORY="$ROOT_DIRECTORY/docs/releases"
-RELEASE_NOTES_PATH="$RELEASE_NOTES_DIRECTORY/index.md"
+WEBSITE_DATA_DIRECTORY="$ROOT_DIRECTORY/docs/_data"
+RELEASES_PATH="$WEBSITE_DATA_DIRECTORY/releases.json"
 
 cd "$ROOT_DIRECTORY"
 
-mkdir -p "$RELEASE_NOTES_DIRECTORY"
-changes notes --all --released --template "$RELEASE_NOTES_TEMPLATE_PATH" > "$RELEASE_NOTES_PATH"
+mkdir -p "$WEBSITE_DATA_DIRECTORY"
+build-tools \
+    github-releases jbmorley little-luggable \
+    --pattern "*.uf2" > "$RELEASES_PATH"
