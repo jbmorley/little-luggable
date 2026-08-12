@@ -3,9 +3,9 @@
 /_site
 /artifacts
 /keyboard/build
+/docs/_data/releases.json
 /docs/_site
 /docs/.jekyll-cache
-/docs/releases
 /docs/vendor
 /keyboard/firmware/boards/shields/little_keyboard/version.dtsi
 fp-info-cache

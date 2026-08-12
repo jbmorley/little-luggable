@@ -185,9 +185,9 @@ jobs:
   website-build:
     runs-on: ubuntu-latest
 
-    # The site build must run after `publish-release` but doesn't actually require the step itself (e.g., on PR builds).
     needs:
     - publish-release
+
     if: ${{ !cancelled() && (needs.publish-release.result == 'success' || needs.publish-release.result == 'skipped') }}
 
     steps:
@@ -212,6 +212,9 @@ jobs:
         version: ${{ steps.mise.outputs.version }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Upgrade mise
+      run: mise upgrade
 
     - name: Cache the Jekyll dependencies
       uses: actions/cache@v6

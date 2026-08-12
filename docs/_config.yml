@@ -9,13 +9,17 @@ url: "https://little-luggable.jbmorley.co.uk"
 repository: https://github.com/jbmorley/little-luggable
 copyright: 2022-2026 <a href="https://jbmorley.co.uk/about">Jason Morley</a>
 
+primary_action:
+  title: Download
+  href: /downloads
+
 navigation:
   - title: Little Luggable
     href: /
   - title: Documentation
     href: /docs
-  - title: Releases
-    href: /releases
+  - title: Downloads
+    href: /downloads
   - title: Source
     href: https://github.com/jbmorley/little-luggable
   - title: More
