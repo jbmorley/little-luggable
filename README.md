@@ -12,14 +12,6 @@ The Little Luggable is my take on a cyberdeck. It's built around the [Raspberry 
 
 Check out the [project page](https://little-luggable.jbmorley.co.uk) for more.
 
-## Making Your Own
-
-Little Luggable is licensed under Creative Commons Attribution 4.0 and I'd love to see people take the design and make it their own. Pull requests are encouraged–I'm excited to see where we can take this. Please share photos if you do make one.
-
-Right now I have a few spare PCBs and aluminium screen mounting plates as I had to order in bulk so reach out if you'd like one at cost + shipping.
-
-The original design was done in Fusion 360 which makes it a little hard to share, but I'm happy to figure out ways to do so if there's interest.
-
 ## Parts
 
 Where possible, the Little Luggable uses off-the-shelf parts. I've separated these out and tried to provide links to places you can purchase standard parts. The links are currently pretty UK / US centric and I'd love pull requests for options for other markets.
@@ -67,3 +59,7 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
   ![](images/keystone-cutout.jpg)
 
 - [Recommended Tapping Drill and Clearance Hole Sizes](https://international.optimas.com/technical-resources/tapping-sizes/)
+
+# License
+
+Little Luggable is copyright (c) 2022-2026 Jason Morley (see [COPYRIGHT](COPYRIGHT)) and licensed under Creative Commons Attribution 4.0 (CC BY 4.0) (see [LICENSE](LICENSE)).
