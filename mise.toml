@@ -1,11 +1,20 @@
 [tools]
 
+node = "24.14.0"
 python = "3.12.13"
 ruby = "3.4.8"
 uv = "latest"
 
+"npm:@gltf-transform/cli" = "4"
+"npm:sharp-cli" = "5"
 "pipx:changes-semver" = "6"
 "pipx:inseven-build-tools" = "1"
+
+[env]
+
+# Ensure uv uses the Python provisioned by mise above rather than silently
+# downloading an interpreter of its own.
+UV_PYTHON_PREFERENCE = "only-system"
 
 [settings]
 

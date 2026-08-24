@@ -25,9 +25,8 @@ set -o pipefail
 set -x
 set -u
 
-SCRIPTS_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-
-ROOT_DIRECTORY="$SCRIPTS_DIRECTORY/.."
+ROOT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." &> /dev/null && pwd )"
+SCRIPTS_DIRECTORY="$ROOT_DIRECTORY/scripts"
 WEBSITE_DIRECTORY="$ROOT_DIRECTORY/docs"
 
 # Process the command line arguments.
@@ -48,8 +47,9 @@ do
     esac
 done
 
-# Update the release notes.
+# Update the release notes and generate image thumbnails.
 "$SCRIPTS_DIRECTORY/update-release-notes.sh"
+"$SCRIPTS_DIRECTORY/resize-images.sh"
 
 # Install the Jekyll dependencies.
 cd "$WEBSITE_DIRECTORY"
