@@ -1,5 +1,5 @@
 ---
-title: model-viewer
+title: Model
 priority: -100
 ---
 
