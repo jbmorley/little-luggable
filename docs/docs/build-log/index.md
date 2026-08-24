@@ -23,4 +23,6 @@ While using a cheap Bluetooth keyboard, it flexed in the 3D printed bracket and 
 
 ![](IMG_0402.jpeg)
 
+![](dichroic-fascia.jpeg)
+
 ![](IMG_0417.jpeg)

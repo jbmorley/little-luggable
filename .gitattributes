@@ -18,6 +18,7 @@
 *.[Pp][Ss][Dd] filter=lfs diff=lfs merge=lfs -text
 *.[Tt][Aa][Rr].[Gg][Zz] filter=lfs diff=lfs merge=lfs -text
 *.[Uu][Ss][Dd][Zz] filter=lfs diff=lfs merge=lfs -text
+*.[Ww][Ee][Bb][Pp] filter=lfs diff=lfs merge=lfs -text
 *.[Ww][Oo][Ff][Ff] filter=lfs diff=lfs merge=lfs -text
 *.[Ww][Oo][Ff][Ff]2 filter=lfs diff=lfs merge=lfs -text
 *.[Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text
