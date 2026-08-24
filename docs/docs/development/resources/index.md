@@ -9,6 +9,16 @@ priority: -100
 - [Single Button Nice!Nano Keyboard, Ben Vallack](https://www.youtube.com/watch?v=vr8LkjsRqZs)
 - [Make your own analog keyboard PCB (in Kicad) - Part 1 (Schematic), riskable](https://www.youtube.com/watch?v=TfKz_FbZWLQ)
 
+# Manufacture
+
+- [Recommended Tapping Drill and Clearance Hole Sizes](https://international.optimas.com/technical-resources/tapping-sizes/)
+
+# Dimensions
+
+- [Keystone cutout](https://www.phoenixcontact.com/en-pc/products/rj45-socket-insert-cuc-k-j1zni-s-r4idc8-1419021)
+
+  ![](keystone-cutout.jpg)
+
 # Parts
 
   - [Broaching Standoff](https://www.youtube.com/watch?v=TuJRveLrtYI)
