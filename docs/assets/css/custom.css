@@ -1,9 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:CASL,MONO,wght@0..1,0..1,300..1000&display=swap');
+
 :root {
-    --brand-color: #0000ee;
+    --brand-color: #ff1471;
+    --main-font-weight: 400;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --brand-color: #0a84ff;
-    }
+body {
+    font-family: 'Recursive', var(--code-font-family);
+    font-size: 16px;
+    font-variation-settings: 'MONO' 0.1, 'CASL' 0;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+pre,
+code {
+    font-family: var(--code-font-family);
+    font-size: 15px;
+}
+
+.content-sidebar h1 {
+    font-family: "Recursive";
+    font-weight: 600;
+}
+
+.tagline {
+    font-weight: 700;
+}
+
+footer {
+    font-weight: 300;
+}
+
+footer a {
+    color: var(--brand-color);
+    font-weight: 400;
 }
