@@ -53,11 +53,6 @@ Where possible, the Little Luggable uses off-the-shelf parts. I've separated the
      mogrify -trim -bordercolor white -border 60 render.png
      ```
 
-- [Keystone cutout details](https://www.phoenixcontact.com/en-pc/products/rj45-socket-insert-cuc-k-j1zni-s-r4idc8-1419021)
-  ![](images/keystone-cutout.jpg)
-
-- [Recommended Tapping Drill and Clearance Hole Sizes](https://international.optimas.com/technical-resources/tapping-sizes/)
-
 # License
 
 Little Luggable is copyright (c) 2022-2026 Jason Morley (see [COPYRIGHT](COPYRIGHT)) and licensed under Creative Commons Attribution 4.0 (CC BY 4.0) (see [LICENSE](LICENSE)).
