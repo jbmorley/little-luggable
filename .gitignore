@@ -2,11 +2,12 @@
 .env
 /_site
 /artifacts
-/keyboard/build
 /docs/_data/releases.json
 /docs/_site
 /docs/.jekyll-cache
+/docs/gallery/*.jpg
 /docs/vendor
+/keyboard/build
 /keyboard/firmware/boards/shields/little_keyboard/version.dtsi
 fp-info-cache
 keyboard/keyboard-backups/*.zip

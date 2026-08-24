@@ -16,6 +16,8 @@ primary_action:
 navigation:
   - title: Little Luggable
     href: /
+  - title: Gallery
+    href: /gallery
   - title: Documentation
     href: /docs
   - title: Downloads

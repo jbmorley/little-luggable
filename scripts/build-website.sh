@@ -48,8 +48,9 @@ do
     esac
 done
 
-# Update the release notes.
+# Update the release notes and generate image thumbnails.
 "$SCRIPTS_DIRECTORY/update-release-notes.sh"
+"$SCRIPTS_DIRECTORY/resize-images.sh"
 
 # Install the Jekyll dependencies.
 cd "$WEBSITE_DIRECTORY"
