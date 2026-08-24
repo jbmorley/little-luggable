@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 
 import argparse
+import glob
 import os
 import re
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument("file", nargs="+")
-options = parser.parse_args()
+ROOT_DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+GALLERY_DIRECTORY = os.path.join(ROOT_DIRECTORY, "images", "gallery")
 
-for i, f in enumerate(sorted(options.file)):
+print(GALLERY_DIRECTORY)
+
+
+os.chdir(GALLERY_DIRECTORY)
+
+for i, f in enumerate(sorted(glob.glob("*.jpg"))):
     print(f"Renaming '{f}'...")
     name = "little-luggable-%03d.jpg" % (i, )
     os.rename(f, name)
