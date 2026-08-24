@@ -24,9 +24,8 @@ set -e
 set -o pipefail
 set -u
 
-SCRIPTS_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-
-ROOT_DIRECTORY="$SCRIPTS_DIRECTORY/.."
+ROOT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." &> /dev/null && pwd )"
+SCRIPTS_DIRECTORY="$ROOT_DIRECTORY/scripts"
 SOURCE_DIRECTORY="$ROOT_DIRECTORY/images/gallery"
 DESTINATION_DIRECTORY="$ROOT_DIRECTORY/docs/gallery"
 
