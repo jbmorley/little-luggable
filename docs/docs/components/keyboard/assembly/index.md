@@ -1,13 +1,13 @@
 ---
-title: Hardware
+title: Assembly
 priority: 100
 ---
 
-### Keyboard
+# Parts
 
 ![](keyboard-assembly.png)
 
-#### Off-the-shelf
+## Off-The-Shelf
 
 | **Part**                                                     | **Quantity** |
 | ------------------------------------------------------------ | ------------ |
@@ -31,7 +31,7 @@ priority: 100
 | [Cherry MX Red Switches](https://mechboards.co.uk/products/cherry-mx-red) | 64           |
 | 90 Degree Headers, 2 wide                                    | 2            |
 
-#### Custom
+## Custom
 
 - [Power Switch Collar, 3mm Acrylic, Laser Cut](manufacture/v7/switch-collar.dxf)
 

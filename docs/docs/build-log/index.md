@@ -1,5 +1,6 @@
 ---
 title: Build Log
+priority: 100
 ---
 
 The Little Luggable is an ever-evolving project. The initial build took about 6 months elapsed, starting in December 2022, through to summer 2023. I originally used a Raspberry Pi 4 and have since upgraded to a 5.
