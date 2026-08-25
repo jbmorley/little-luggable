@@ -1,3 +1,5 @@
+/* Created using AI (Anthropic Claude, Opus 5); no copyright or license asserted. */
+
 const RETURN_DELAY = 1000;
 const RETURN_DURATION = 1500;
 

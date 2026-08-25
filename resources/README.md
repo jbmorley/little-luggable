@@ -8,3 +8,5 @@ The resources in this directory have been added for convenience and future refer
 - [**Tactile Switches 6mm THT**, Dmitry Levin, GrabCAD](https://grabcad.com/library/tactile-switches-6mm-tht-1) – tactile-switches-6mm-tht-1.snapshot.2.zip
 
 - [**Display OLED128x32**, Danilo Clemente, GrabCAD](https://grabcad.com/library/display-oled128x32-1) – display-oled128x32-1.snapshot.4.zip
+
+- [**Nabla**, The Nabla Project Authors, Google Fonts](https://fonts.google.com/specimen/Nabla) – fonts/ (SIL Open Font License 1.1, see fonts/Nabla-OFL.txt)

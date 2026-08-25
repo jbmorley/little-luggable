@@ -6,6 +6,7 @@
 /docs/_site
 /docs/.jekyll-cache
 /docs/gallery/*.jpg
+/docs/assets/fonts
 /docs/vendor
 /keyboard/build
 /keyboard/firmware/boards/shields/little_keyboard/version.dtsi
