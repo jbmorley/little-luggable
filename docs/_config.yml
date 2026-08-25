@@ -32,6 +32,8 @@ navigation:
 footer:
   - title: License
     href: /license
+  - title: AI
+    href: /ai
 
 destination: ../_site
 

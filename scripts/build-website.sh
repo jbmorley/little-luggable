@@ -27,7 +27,12 @@ set -u
 
 ROOT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." &> /dev/null && pwd )"
 SCRIPTS_DIRECTORY="$ROOT_DIRECTORY/scripts"
+FONTS_DIRECTORY="$ROOT_DIRECTORY/resources/fonts"
 WEBSITE_DIRECTORY="$ROOT_DIRECTORY/docs"
+WEBSITE_DATA_DIRECTORY="$WEBSITE_DIRECTORY/_data"
+WEBSITE_FONTS_DIRECTORY="$WEBSITE_DIRECTORY/assets/fonts"
+RELEASES_PATH="$WEBSITE_DATA_DIRECTORY/releases.json"
+
 
 # Process the command line arguments.
 POSITIONAL=()
@@ -47,8 +52,30 @@ do
     esac
 done
 
-# Update the release notes and generate image thumbnails.
-"$SCRIPTS_DIRECTORY/update-release-notes.sh"
+# Update the release notes.
+
+mkdir -p "$WEBSITE_DATA_DIRECTORY"
+build-tools \
+    github-releases jbmorley little-luggable \
+    --pattern "*.uf2" > "$RELEASES_PATH"
+
+# Generate fonts.
+
+mkdir -p "$WEBSITE_FONTS_DIRECTORY"
+rm "$WEBSITE_FONTS_DIRECTORY"/*.{woff,woff2,txt} || true
+
+PALETTE=1
+PALETTE_SOURCE="$FONTS_DIRECTORY/nabla-latin.woff2"
+for subset in latin latin-ext ; do
+    cp "$FONTS_DIRECTORY/nabla-$subset.woff2" "$WEBSITE_FONTS_DIRECTORY/nabla-$subset.woff2"
+    "$SCRIPTS_DIRECTORY/recolor-nabla.py" \
+        "$FONTS_DIRECTORY/nabla-$subset-svg.woff" \
+        "$WEBSITE_FONTS_DIRECTORY/nabla-$subset-svg-recolor-palette-$PALETTE.woff" \
+        --palette "$PALETTE" \
+        --palette-from "$PALETTE_SOURCE"
+done
+
+# Generate derived assets.
 "$SCRIPTS_DIRECTORY/resize-images.sh"
 
 # Install the Jekyll dependencies.

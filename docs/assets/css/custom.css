@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:CASL,MONO,wght@0..1,0..1,300..1000&display=swap');
 
+/* This feels far more complex than it should be: WebKit does not support palette selection, so we provide the WOFF
+   font with color palette 1 baked-in. Chrome and other Blink-based browsers, conversely, require COLRv1 and correctly
+   handles palette selection, so we also provide a WOFF2 and specify the palette. Firefox doesn't seem to care and
+   accepts the first font we give it. */
+
+@font-face {
+    font-family: 'Nabla';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('/assets/fonts/nabla-latin-svg-recolor-palette-1.woff') format('woff');
+    src: url('/assets/fonts/nabla-latin-svg-recolor-palette-1.woff') format('woff') tech(color-SVG),
+         url('/assets/fonts/nabla-latin.woff2') format('woff2') tech(color-COLRv1);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Nabla';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('/assets/fonts/nabla-latin-ext-svg-recolor-palette-1.woff') format('woff');
+    src: url('/assets/fonts/nabla-latin-ext-svg-recolor-palette-1.woff') format('woff') tech(color-SVG),
+         url('/assets/fonts/nabla-latin-ext.woff2') format('woff2') tech(color-COLRv1);
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-palette-values --brand {
+    font-family: Nabla;
+    base-palette: 1;
+}
+
 :root {
     --brand-color: #ff1471;
     --main-font-weight: 400;
@@ -26,6 +58,17 @@ model-viewer .poster-fallback {
     object-fit: contain;
 }
 
+.header .appname {
+    font-family: "Nabla", system-ui;
+    font-palette: --brand;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+    font-size: clamp(3rem, 19vw, 120px);
+    line-height: 1.2em;
+}
+
 body {
     font-family: 'Recursive', var(--code-font-family);
     font-size: 16px;
@@ -42,9 +85,11 @@ code {
     font-size: 15px;
 }
 
-.content-sidebar h1 {
-    font-family: "Recursive";
-    font-weight: 600;
+header h1:not(.content-sidebar *) {
+    font-family: "Nabla", system-ui;
+    font-palette: --brand;
+    font-size: clamp(2.5rem, 16vw, 5em);
+    font-weight: 400;
 }
 
 .tagline {
@@ -55,7 +100,6 @@ footer {
     font-weight: 300;
 }
 
-footer a {
-    color: var(--brand-color);
-    font-weight: 400;
+footer p {
+    line-height: 1.3em;
 }

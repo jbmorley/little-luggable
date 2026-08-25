@@ -1,3 +1,5 @@
+# Created using AI (Anthropic Claude, Opus 5); no copyright or license asserted.
+
 """
 Creates a set of plastic materials.
 
