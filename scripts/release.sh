@@ -59,6 +59,11 @@ find "$ARTIFACTS_DIRECTORY"
 
 cd "$BUILD_DIRECTORY"
 
+# Create the manifest.
+build-tools init-manifest manifest.json \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER"
+
 # nice!nano v1.
 LITTLE_KEYBOARD_NICE_NANO_V1_NAME="little-keyboard-nice-nano-v1-$VERSION_NUMBER-$BUILD_NUMBER.uf2"
 cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v1.uf2" "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME"
@@ -81,6 +86,7 @@ changes \
     --skip-if-empty \
     --push \
     --exec "$RELEASE_SCRIPT_PATH" \
+    "$BUILD_DIRECTORY/manifest.json" \
     "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
     "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
     "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V1_NAME" \
