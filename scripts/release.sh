@@ -95,9 +95,9 @@ build-tools add-artifact manifest.json \
     --format uf2 \
     --git-sha "$GIT_SHA" \
     --supports-os zmk \
-    --supports-version 1 \
-    --supports-codename v1 \
-    --supports-architecture nice-nano
+    --supports-version 4 \
+    --supports-codename 4 \
+    --supports-architecture nice-nano-v1
 
 # nice!nano v2.
 
@@ -112,9 +112,9 @@ build-tools add-artifact manifest.json \
     --format uf2 \
     --git-sha "$GIT_SHA" \
     --supports-os zmk \
-    --supports-version 2 \
-    --supports-codename v2 \
-    --supports-architecture nice-nano
+    --supports-version 4 \
+    --supports-codename 4 \
+    --supports-architecture nice-nano-v2
 
 # Settings reset firmware.
 
@@ -129,9 +129,9 @@ build-tools add-artifact manifest.json \
     --format uf2 \
     --git-sha "$GIT_SHA" \
     --supports-os zmk \
-    --supports-version 1 \
-    --supports-codename v1 \
-    --supports-architecture nice-nano
+    --supports-version 4 \
+    --supports-codename 4 \
+    --supports-architecture nice-nano-v1
 
 SETTINGS_RESET_NICE_NANO_V2_NAME="settings-reset-nice-nano-v2.uf2"
 cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v2.uf2" "$SETTINGS_RESET_NICE_NANO_V2_NAME"
@@ -144,9 +144,9 @@ build-tools add-artifact manifest.json \
     --format uf2 \
     --git-sha "$GIT_SHA" \
     --supports-os zmk \
-    --supports-version 2 \
-    --supports-codename v2 \
-    --supports-architecture nice-nano
+    --supports-version 4 \
+    --supports-codename 4 \
+    --supports-architecture nice-nano-v2
 
 # Generate a zip file containing all the release artifacts.
 zip "release.zip" \
