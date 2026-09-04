@@ -163,6 +163,7 @@ jobs:
       with:
         name: release
         path: build/release.zip
+        archive: false
         if-no-files-found: error
 
   website-build:
