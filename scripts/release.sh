@@ -36,15 +36,29 @@ RELEASE_SCRIPT_PATH="$SCRIPTS_DIRECTORY/gh-release.sh"
 # Check that the GitHub command is available on the path.
 which gh || (echo "GitHub cli (gh) not available on the path." && exit 1)
 
+# Process the command line arguments.
+POSITIONAL=()
+RELEASE=${RELEASE:-false}
+while [[ $# -gt 0 ]]
+do
+    key="$1"
+    case $key in
+        -r|--release)
+        RELEASE=true
+        shift
+        ;;
+        *)
+        POSITIONAL+=("$1")
+        shift
+        ;;
+    esac
+done
+
 # Source the .env file if present, to ease local development.
 if [ -f "$ENV_PATH" ] ; then
     echo "Sourcing .env..."
     source "$ENV_PATH"
 fi
-
-# Fall back to computing the version and build numbers if CI hasn't set them.
-VERSION_NUMBER=${VERSION_NUMBER:-$(changes version)}
-BUILD_NUMBER=${BUILD_NUMBER:-$(build-tools generate-build-number)}
 
 cd "$ROOT_DIRECTORY"
 
@@ -59,29 +73,101 @@ find "$ARTIFACTS_DIRECTORY"
 
 cd "$BUILD_DIRECTORY"
 
+# Create the manifest.
+
+GIT_SHA=`git rev-parse HEAD`
+
+build-tools init-manifest manifest.json \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --git-sha "$GIT_SHA"
+
 # nice!nano v1.
+
 LITTLE_KEYBOARD_NICE_NANO_V1_NAME="little-keyboard-nice-nano-v1-$VERSION_NUMBER-$BUILD_NUMBER.uf2"
 cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v1.uf2" "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME"
 
+build-tools add-artifact manifest.json \
+    --project little-keyboard-firmware \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --path "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
+    --format uf2 \
+    --git-sha "$GIT_SHA" \
+    --supports-os zmk \
+    --supports-version 1 \
+    --supports-codename v1 \
+    --supports-architecture nice-nano
+
 # nice!nano v2.
+
 LITTLE_KEYBOARD_NICE_NANO_V2_NAME="little-keyboard-nice-nano-v2-$VERSION_NUMBER-$BUILD_NUMBER.uf2"
 cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v2.uf2" "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME"
 
-# Settings reset firmware. This wipes the on-device settings partition (bonds
-# and the stored BLE device name); it is version-independent, so it keeps a
-# stable filename rather than being tagged with the version and build numbers.
+build-tools add-artifact manifest.json \
+    --project little-keyboard-firmware \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --path "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
+    --format uf2 \
+    --git-sha "$GIT_SHA" \
+    --supports-os zmk \
+    --supports-version 2 \
+    --supports-codename v2 \
+    --supports-architecture nice-nano
+
+# Settings reset firmware.
+
 SETTINGS_RESET_NICE_NANO_V1_NAME="settings-reset-nice-nano-v1.uf2"
 cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v1.uf2" "$SETTINGS_RESET_NICE_NANO_V1_NAME"
+
+build-tools add-artifact manifest.json \
+    --project little-keyboard-settings-reset \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --path "$SETTINGS_RESET_NICE_NANO_V1_NAME" \
+    --format uf2 \
+    --git-sha "$GIT_SHA" \
+    --supports-os zmk \
+    --supports-version 1 \
+    --supports-codename v1 \
+    --supports-architecture nice-nano
 
 SETTINGS_RESET_NICE_NANO_V2_NAME="settings-reset-nice-nano-v2.uf2"
 cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v2.uf2" "$SETTINGS_RESET_NICE_NANO_V2_NAME"
 
-changes \
-    release \
-    --skip-if-empty \
-    --push \
-    --exec "$RELEASE_SCRIPT_PATH" \
-    "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
-    "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
-    "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V1_NAME" \
-    "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V2_NAME"
+build-tools add-artifact manifest.json \
+    --project little-keyboard-settings-reset \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --path "$SETTINGS_RESET_NICE_NANO_V2_NAME" \
+    --format uf2 \
+    --git-sha "$GIT_SHA" \
+    --supports-os zmk \
+    --supports-version 2 \
+    --supports-codename v2 \
+    --supports-architecture nice-nano
+
+# Generate a zip file containing all the release artifacts.
+zip "release.zip" \
+    "manifest.json" \
+    "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
+    "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
+    "$SETTINGS_RESET_NICE_NANO_V1_NAME" \
+    "$SETTINGS_RESET_NICE_NANO_V2_NAME"
+
+# Release.
+if $RELEASE ; then
+
+    changes \
+        release \
+        --skip-if-empty \
+        --push \
+        --exec "$RELEASE_SCRIPT_PATH" \
+        "$BUILD_DIRECTORY/manifest.json" \
+        "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
+        "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
+        "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V1_NAME" \
+        "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V2_NAME"
+
+fi
