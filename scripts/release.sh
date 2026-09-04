@@ -36,15 +36,29 @@ RELEASE_SCRIPT_PATH="$SCRIPTS_DIRECTORY/gh-release.sh"
 # Check that the GitHub command is available on the path.
 which gh || (echo "GitHub cli (gh) not available on the path." && exit 1)
 
+# Process the command line arguments.
+POSITIONAL=()
+RELEASE=${RELEASE:-false}
+while [[ $# -gt 0 ]]
+do
+    key="$1"
+    case $key in
+        -r|--release)
+        RELEASE=true
+        shift
+        ;;
+        *)
+        POSITIONAL+=("$1")
+        shift
+        ;;
+    esac
+done
+
 # Source the .env file if present, to ease local development.
 if [ -f "$ENV_PATH" ] ; then
     echo "Sourcing .env..."
     source "$ENV_PATH"
 fi
-
-# Fall back to computing the version and build numbers if CI hasn't set them.
-VERSION_NUMBER=${VERSION_NUMBER:-$(changes version)}
-BUILD_NUMBER=${BUILD_NUMBER:-$(build-tools generate-build-number)}
 
 cd "$ROOT_DIRECTORY"
 
@@ -81,13 +95,26 @@ cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v1.uf2" "$SETTINGS_RESET_NICE_
 SETTINGS_RESET_NICE_NANO_V2_NAME="settings-reset-nice-nano-v2.uf2"
 cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v2.uf2" "$SETTINGS_RESET_NICE_NANO_V2_NAME"
 
-changes \
-    release \
-    --skip-if-empty \
-    --push \
-    --exec "$RELEASE_SCRIPT_PATH" \
-    "$BUILD_DIRECTORY/manifest.json" \
-    "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
-    "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
-    "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V1_NAME" \
-    "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V2_NAME"
+# Generate a zip file containing all the release artifacts.
+zip "release.zip" \
+    "$manifest.json" \
+    "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
+    "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
+    "$SETTINGS_RESET_NICE_NANO_V1_NAME" \
+    "$SETTINGS_RESET_NICE_NANO_V2_NAME"
+
+# Release.
+if $RELEASE ; then
+
+    changes \
+        release \
+        --skip-if-empty \
+        --push \
+        --exec "$RELEASE_SCRIPT_PATH" \
+        "$BUILD_DIRECTORY/manifest.json" \
+        "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
+        "$BUILD_DIRECTORY/$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
+        "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V1_NAME" \
+        "$BUILD_DIRECTORY/$SETTINGS_RESET_NICE_NANO_V2_NAME"
+
+fi
