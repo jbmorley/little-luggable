@@ -116,6 +116,7 @@ jobs:
         name: firmware
         path: artifacts/*
         if-no-files-found: error
+        retention-days: 1
 
   publish-release:
     runs-on: ubuntu-latest

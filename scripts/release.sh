@@ -97,7 +97,7 @@ cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v2.uf2" "$SETTINGS_RESET_NICE_
 
 # Generate a zip file containing all the release artifacts.
 zip "release.zip" \
-    "$manifest.json" \
+    "manifest.json" \
     "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
     "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
     "$SETTINGS_RESET_NICE_NANO_V1_NAME" \
