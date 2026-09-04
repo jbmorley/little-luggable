@@ -162,7 +162,7 @@ jobs:
       uses: actions/upload-artifact@v7
       with:
         name: release
-        path: build/*
+        path: build/release.zip
         if-no-files-found: error
 
   website-build:

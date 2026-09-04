@@ -87,7 +87,7 @@ LITTLE_KEYBOARD_NICE_NANO_V1_NAME="little-keyboard-nice-nano-v1-$VERSION_NUMBER-
 cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v1.uf2" "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME"
 
 build-tools add-artifact manifest.json \
-    --project little-keyboard \
+    --project little-keyboard-firmware \
     --version "$VERSION_NUMBER" \
     --build-number "$BUILD_NUMBER" \
     --path "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
@@ -104,7 +104,7 @@ LITTLE_KEYBOARD_NICE_NANO_V2_NAME="little-keyboard-nice-nano-v2-$VERSION_NUMBER-
 cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v2.uf2" "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME"
 
 build-tools add-artifact manifest.json \
-    --project little-keyboard \
+    --project little-keyboard-firmware \
     --version "$VERSION_NUMBER" \
     --build-number "$BUILD_NUMBER" \
     --path "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
@@ -115,14 +115,37 @@ build-tools add-artifact manifest.json \
     --supports-codename v2 \
     --supports-architecture nice-nano
 
-# Settings reset firmware. This wipes the on-device settings partition (bonds
-# and the stored BLE device name); it is version-independent, so it keeps a
-# stable filename rather than being tagged with the version and build numbers.
+# Settings reset firmware.
+
 SETTINGS_RESET_NICE_NANO_V1_NAME="settings-reset-nice-nano-v1.uf2"
 cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v1.uf2" "$SETTINGS_RESET_NICE_NANO_V1_NAME"
 
+build-tools add-artifact manifest.json \
+    --project little-keyboard-settings-reset \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --path "$SETTINGS_RESET_NICE_NANO_V1_NAME" \
+    --format uf2 \
+    --git-sha "$GIT_SHA" \
+    --supports-os zmk \
+    --supports-version 1 \
+    --supports-codename v1 \
+    --supports-architecture nice-nano
+
 SETTINGS_RESET_NICE_NANO_V2_NAME="settings-reset-nice-nano-v2.uf2"
 cp "$ARTIFACTS_DIRECTORY/settings-reset-nice-nano-v2.uf2" "$SETTINGS_RESET_NICE_NANO_V2_NAME"
+
+build-tools add-artifact manifest.json \
+    --project little-keyboard-settings-reset \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --path "$SETTINGS_RESET_NICE_NANO_V2_NAME" \
+    --format uf2 \
+    --git-sha "$GIT_SHA" \
+    --supports-os zmk \
+    --supports-version 2 \
+    --supports-codename v2 \
+    --supports-architecture nice-nano
 
 # Generate a zip file containing all the release artifacts.
 zip "release.zip" \
