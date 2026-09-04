@@ -74,17 +74,46 @@ find "$ARTIFACTS_DIRECTORY"
 cd "$BUILD_DIRECTORY"
 
 # Create the manifest.
+
 build-tools init-manifest manifest.json \
     --version "$VERSION_NUMBER" \
     --build-number "$BUILD_NUMBER"
 
+GIT_SHA=`git rev-parse HEAD`
+
 # nice!nano v1.
+
 LITTLE_KEYBOARD_NICE_NANO_V1_NAME="little-keyboard-nice-nano-v1-$VERSION_NUMBER-$BUILD_NUMBER.uf2"
 cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v1.uf2" "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME"
 
+build-tools add-artifact manifest.json \
+    --project little-keyboard \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --path "$LITTLE_KEYBOARD_NICE_NANO_V1_NAME" \
+    --format uf2 \
+    --git-sha "$GIT_SHA" \
+    --supports-os zmk \
+    --supports-version 1 \
+    --supports-codename v1 \
+    --supports-architecture nice-nano
+
 # nice!nano v2.
+
 LITTLE_KEYBOARD_NICE_NANO_V2_NAME="little-keyboard-nice-nano-v2-$VERSION_NUMBER-$BUILD_NUMBER.uf2"
 cp "$ARTIFACTS_DIRECTORY/little-keyboard-nice-nano-v2.uf2" "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME"
+
+build-tools add-artifact manifest.json \
+    --project little-keyboard \
+    --version "$VERSION_NUMBER" \
+    --build-number "$BUILD_NUMBER" \
+    --path "$LITTLE_KEYBOARD_NICE_NANO_V2_NAME" \
+    --format uf2 \
+    --git-sha "$GIT_SHA" \
+    --supports-os zmk \
+    --supports-version 2 \
+    --supports-codename v2 \
+    --supports-architecture nice-nano
 
 # Settings reset firmware. This wipes the on-device settings partition (bonds
 # and the stored BLE device name); it is version-independent, so it keeps a
