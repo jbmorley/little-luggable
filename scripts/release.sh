@@ -75,11 +75,12 @@ cd "$BUILD_DIRECTORY"
 
 # Create the manifest.
 
+GIT_SHA=`git rev-parse HEAD`
+
 build-tools init-manifest manifest.json \
     --version "$VERSION_NUMBER" \
-    --build-number "$BUILD_NUMBER"
-
-GIT_SHA=`git rev-parse HEAD`
+    --build-number "$BUILD_NUMBER" \
+    --git-sha "$GIT_SHA"
 
 # nice!nano v1.
 
