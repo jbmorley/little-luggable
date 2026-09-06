@@ -29,6 +29,14 @@ navigation:
   - title: Donate ❤️
     href: https://jbmorley.co.uk/donate/
 
+glossary:
+    little-keyboard-firmware: Little Keyboard &ndash; Firmware
+    little-keyboard-settings-reset: Little Keyboard &ndash; Settings Reset Firmware
+    nice-nano: nice!nano
+    nice-nano-v1: nice!nano (v1)
+    nice-nano-v2: nice!nano (v2)
+    zmk: ZMK
+
 footer:
   - title: License
     href: /license

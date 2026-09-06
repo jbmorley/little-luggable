@@ -57,7 +57,7 @@ done
 mkdir -p "$WEBSITE_DATA_DIRECTORY"
 build-tools \
     github-releases jbmorley little-luggable \
-    --pattern "*.uf2" > "$RELEASES_PATH"
+    --synthesize-manifests "$SCRIPTS_DIRECTORY/release-manifest-definition.json" > "$RELEASES_PATH"
 
 # Generate fonts.
 

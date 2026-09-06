@@ -1,0 +1,50 @@
+{
+    "little-*-nice-nano-v1*.uf2": {
+        "project": "little-keyboard-firmware",
+        "format": "uf2",
+        "supports": [
+            {
+                "os": "zmk",
+                "version": "4",
+                "codename": "4",
+                "architecture": "nice-nano-v1"
+            }
+        ]
+    },
+    "little-*-nice-nano-v2*.uf2": {
+        "project": "little-keyboard-firmware",
+        "format": "uf2",
+        "supports": [
+            {
+                "os": "zmk",
+                "version": "4",
+                "codename": "4",
+                "architecture": "nice-nano-v2"
+            }
+        ]
+    },
+    "settings-reset-nice-nano-v1.uf2": {
+        "project": "little-keyboard-settings-reset",
+        "format": "uf2",
+        "supports": [
+            {
+                "os": "zmk",
+                "version": "4",
+                "codename": "4",
+                "architecture": "nice-nano-v1"
+            }
+        ]
+    },
+    "settings-reset-nice-nano-v2.uf2": {
+        "project": "little-keyboard-settings-reset",
+        "format": "uf2",
+        "supports": [
+            {
+                "os": "zmk",
+                "version": "4",
+                "codename": "4",
+                "architecture": "nice-nano-v2"
+            }
+        ]
+    }
+}
