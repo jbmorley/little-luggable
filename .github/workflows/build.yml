@@ -30,7 +30,14 @@ jobs:
         fetch-depth: 0
 
     - name: Install mise
-      uses: jbmorley/latest-mise@v1
+      uses: jdx/mise-action@v4.3.0
+      with:
+        cache: false
+        version: 2026.9.5
+        mise_toml: |
+          [tools]
+          "pipx:changes-semver" = "6"
+          "pipx:inseven-build-tools" = "1"
 
     - name: Generate version and build numbers
       id: version
