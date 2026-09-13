@@ -109,7 +109,7 @@ DEPENDENCIES
   csv
   jekyll (~> 4.2.0)
   theme!
-  tzinfo (~> 1.2)
+  tzinfo (~> 2.0)
   tzinfo-data
   wdm (~> 0.1.1)
   webrick (~> 1.7)
