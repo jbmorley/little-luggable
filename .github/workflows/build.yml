@@ -33,7 +33,7 @@ jobs:
       uses: jdx/mise-action@v4.3.0
       with:
         cache: false
-        version: 2026.9.8
+        version: 2026.9.9
         mise_toml: |
           [tools]
           "pipx:changes-semver" = "6"
