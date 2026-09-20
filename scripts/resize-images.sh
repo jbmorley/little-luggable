@@ -26,15 +26,18 @@ resize() {
     local metadata="$4"
 
     if [ "$metadata" = "keep" ] ; then
-        sharp --input "$source" --output "$destination" \
-            --format jpeg --quality "$QUALITY" \
-            --withMetadata --autoOrient \
-            resize "$width" --fit inside --withoutEnlargement > /dev/null
+        magick "$source" \
+            -auto-orient \
+            -resize "${width}x>" \
+            -quality "$QUALITY" \
+            "jpeg:$destination"
     else
-        sharp --input "$source" --output "$destination" \
-            --format jpeg --quality "$QUALITY" \
-            --autoOrient \
-            resize "$width" --fit inside --withoutEnlargement > /dev/null
+        magick "$source" \
+            -auto-orient \
+            -resize "${width}x>" \
+            -strip \
+            -quality "$QUALITY" \
+            "jpeg:$destination"
     fi
 }
 
