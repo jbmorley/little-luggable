@@ -196,6 +196,13 @@ jobs:
     - name: Install mise
       uses: jbmorley/latest-mise@v1
 
+    - name: Cache the Jekyll dependencies
+      uses: actions/cache@v6
+      with:
+        path: docs/vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('docs/Gemfile.lock') }}
+        restore-keys: ${{ runner.os }}-gems-
+
     - name: Build website
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
