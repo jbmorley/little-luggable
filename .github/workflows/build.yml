@@ -16,7 +16,7 @@ concurrency:
 jobs:
 
   generate-version-number:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     outputs:
       version_number: ${{ steps.version.outputs.version_number }}
@@ -48,7 +48,7 @@ jobs:
         echo "build_number=$BUILD_NUMBER" >> $GITHUB_OUTPUT
 
   firmware-build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     needs:
     - generate-version-number
@@ -126,7 +126,7 @@ jobs:
         retention-days: 1
 
   publish-release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     needs:
     - generate-version-number
@@ -174,7 +174,7 @@ jobs:
         if-no-files-found: error
 
   website-build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     needs:
     - publish-release
@@ -226,7 +226,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     steps:
       - name: Deploy to GitHub Pages
