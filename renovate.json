@@ -2,5 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>inseven/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
+        "git-submodules"
+      ],
+      "matchDepNames": [
+        "keyboard/keebio-components",
+        "keyboard/Keebio-Parts.pretty",
+        "keyboard/marbastlib"
+      ],
+      "enabled": false
+    }
   ]
 }
