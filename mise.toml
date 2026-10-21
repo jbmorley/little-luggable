@@ -1,8 +1,8 @@
 [tools]
 
 imagemagick = "7"
-node = "24.22.0"
-python = "3.15.0"
+node = "24.22.1"
+python = "3.15.1"
 ruby = "4.0.7"
 uv = "latest"
 
