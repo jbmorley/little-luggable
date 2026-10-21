@@ -30,7 +30,7 @@ jobs:
         fetch-depth: 0
 
     - name: Install mise
-      uses: jdx/mise-action@v5.2.1
+      uses: jdx/mise-action@v5.2.2
       with:
         cache: false
         version: 2026.10.17
