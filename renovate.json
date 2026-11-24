@@ -9,7 +9,7 @@
     {
       "matchManagers": ["mise"],
       "matchDepNames": ["imagemagick"],
-      "packageName": "conda-forge/imagemagick"
+      "overridePackageName": "conda-forge/imagemagick"
     },
     {
       "matchManagers": [
