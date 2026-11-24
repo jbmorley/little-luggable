@@ -7,6 +7,11 @@
   "cloneSubmodulesFilter": ["docs/_theme"],
   "packageRules": [
     {
+      "matchManagers": ["mise"],
+      "matchDepNames": ["imagemagick"],
+      "packageName": "conda-forge/imagemagick"
+    },
+    {
       "matchManagers": [
         "git-submodules"
       ],
