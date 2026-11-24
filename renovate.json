@@ -3,6 +3,8 @@
   "extends": [
     "local>inseven/renovate-config"
   ],
+  "cloneSubmodules": true,
+  "cloneSubmodulesFilter": ["docs/_theme"],
   "packageRules": [
     {
       "matchManagers": [
