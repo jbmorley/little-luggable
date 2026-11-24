@@ -142,6 +142,11 @@ jobs:
       VERSION_NUMBER: ${{ needs.generate-version-number.outputs.version_number }}
       BUILD_NUMBER: ${{ needs.generate-version-number.outputs.build_number }}
 
+      MISE_CACHE_DIR: ${{ github.workspace }}/.mise/cache
+      MISE_CONFIG_DIR: ${{ github.workspace }}/.mise/config
+      MISE_DATA_DIR: ${{ github.workspace }}/.mise/data
+      MISE_STATE_DIR: ${{ github.workspace }}/.mise/state
+
     steps:
 
     - name: Checkout repository
@@ -149,8 +154,18 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Cache mise
+      id: cache-mise
+      uses: actions/cache@v6
+      with:
+        path: .mise
+        key: ${{ runner.os }}-${{ runner.arch }}-mise--${{ hashFiles('mise.toml') }}
+
     - name: Install mise
-      uses: jbmorley/latest-mise@v1
+      uses: jdx/mise-action@v5.1.1
+      with:
+        version: 2026.10.8
+        cache: false
 
     - name: Download the firmware artifacts
       uses: actions/download-artifact@v8
@@ -181,6 +196,12 @@ jobs:
 
     if: ${{ !cancelled() && (needs.publish-release.result == 'success' || needs.publish-release.result == 'skipped') }}
 
+    env:
+      MISE_CACHE_DIR: ${{ github.workspace }}/.mise/cache
+      MISE_CONFIG_DIR: ${{ github.workspace }}/.mise/config
+      MISE_DATA_DIR: ${{ github.workspace }}/.mise/data
+      MISE_STATE_DIR: ${{ github.workspace }}/.mise/state
+
     steps:
 
     - name: Checkout repository
@@ -193,8 +214,18 @@ jobs:
       run: |
         git submodule update --init --depth 1 docs/_theme
 
+    - name: Cache mise
+      id: cache-mise
+      uses: actions/cache@v6
+      with:
+        path: .mise
+        key: ${{ runner.os }}-${{ runner.arch }}-mise--${{ hashFiles('mise.toml') }}
+
     - name: Install mise
-      uses: jbmorley/latest-mise@v1
+      uses: jdx/mise-action@v5.1.1
+      with:
+        version: 2026.10.8
+        cache: false
 
     - name: Cache the Jekyll dependencies
       uses: actions/cache@v6
